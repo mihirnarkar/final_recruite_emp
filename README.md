@@ -68,3 +68,31 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+<!-- **************************** This documentation is made by mihir:- **************************************** -->
+
+<!-- Error 1 :-  -->
+(1) "react-script" error 
+--> Just run the command on cmd or vs code terminal (npm install)
+
+<!-- Error 2:-  -->
+(2) "react-router-dom" module not found
+--> (npm i react-router-dom)
+
+<!-- Error 3:-  -->
+(3) Blank page error
+--> This error is face by many as it is just because of inline css argument pass by us,Just make the changes or removes style as inline css and Create style.css and then use it from their
+
+for eg:- 
+<div class="container" style="height: 90px;"> --> wrong way
+
+create css file as style.css and use as given below
+.cont{
+    height: 90px;
+}
+
+then use it in main file as,
+<div class="cont"> --> correct way
+
