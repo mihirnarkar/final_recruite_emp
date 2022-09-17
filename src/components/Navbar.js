@@ -20,6 +20,7 @@ function Navbar() {
                     <div className="navbar-nav ms-auto p-4 p-lg-0">
 
                         <Link className="nav-item nav-link" to="/" >Home</Link> 
+                        <Link to="/about" className="nav-item nav-link">About</Link>
 
                         <div className="nav-item dropdown">
                             <Link to="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Jobs</Link>
