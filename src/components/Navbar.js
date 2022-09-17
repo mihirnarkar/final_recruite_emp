@@ -6,7 +6,7 @@ function Navbar() {
         <>
             {/* Navbar starts */}
             <nav className="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
-                <Link to="index.html" className="navbar-brand d-flex align-items-center text-center py-0 px-4 px-lg-5">
+                <Link to="/" className="navbar-brand d-flex align-items-center text-center py-0 px-4 px-lg-5">
                 <span>
                     <img src='/img/logo.gif' className='logo' />
                 </span>
