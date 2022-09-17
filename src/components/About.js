@@ -1,9 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
+import Navbar from './Navbar'
 function About() {
     return (
         <>
+       
             {/* About starts */}
             <div className="container-xxl py-5">
             <div class="container">
