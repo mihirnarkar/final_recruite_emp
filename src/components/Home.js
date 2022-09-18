@@ -5,6 +5,7 @@ import Search from './Search'
 import Categories_card from './Categories_card'
 import About from './about/About'
 import Footer from './Footer'
+import JobListContent from './joblist/JobListContent'
 
 function Home() {
   return (
@@ -14,6 +15,7 @@ function Home() {
     <Search/>
     <Categories_card/>
     <About/>
+    <JobListContent/>
     <Footer/>
     </>
   )
