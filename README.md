@@ -96,3 +96,9 @@ create css file as style.css and use as given below
 then use it in main file as,
 <div class="cont"> --> correct way
 
+<!-- Error 4:-  -->
+(4) While routing dont use (/path/path) and use (/path)
+--> For eg:- 
+<!-- <Route path='/security/login' element={<Login/>}/> --> wrong way
+<!-- <Route path='/login' element={<Login/>}/> --> right way
+

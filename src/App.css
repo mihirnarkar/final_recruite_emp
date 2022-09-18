@@ -80,4 +80,16 @@
   padding: 40px;
 }
 
+.login{
+  border: 1px solid grey;
+  border-radius: 10px; 
+  background-color: #f0faff;
+}
 
+.login1{
+  color: green;
+}
+
+.carousel{
+  opacity: 0.85;
+}

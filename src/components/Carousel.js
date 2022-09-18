@@ -13,21 +13,21 @@ function Carousel() {
   </div>
   <div className="carousel-inner">
     <div className="carousel-item active">
-      <img src="/img/carouselnew1.jpeg" className="d-block w-100 h-50" alt="..."/>
+      <img src="/img/carouselnew1.jpeg" className="d-block w-100 h-50 carousel" alt="..."/>
       <div className="carousel-caption d-none d-md-block">
         <h5>First slide label</h5>
         <p>Some representative placeholder content for the first slide.</p>
       </div>
     </div>
     <div className="carousel-item">
-      <img src="/img/carouselnew2.jpg" className="d-block w-100 h-50" alt="..."/>
+      <img src="/img/carouselnew2.jpg" className="d-block w-100 h-50 carousel" alt="..."/>
       <div className="carousel-caption d-none d-md-block">
         <h5>Second slide label</h5>
         <p>Some representative placeholder content for the second slide.</p>
       </div>
     </div>
     <div className="carousel-item">
-      <img src="/img/carouselnew1.jpeg" className="d-block w-100 h-50" alt="..."/>
+      <img src="/img/carouselnew1.jpeg" className="d-block w-100 h-50 carousel" alt="..."/>
       <div className="carousel-caption d-none d-md-block">
         <h5>Third slide label</h5>
         <p>Some representative placeholder content for the third slide.</p>

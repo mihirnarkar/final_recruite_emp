@@ -11,6 +11,7 @@ import JobListPage from './components/joblist/JobListPage';
 import JobDetailPage from './components/jobdetail/JobDetailPage';
 import ScrollToTop from './components/ScrollToTop';
 import GetJobPage from './components/services/GetJobPage';
+import Login from './components/security/Login';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route path='/joblist' element={<JobListPage/>}/>
         <Route path='/jobdetail' element={<JobDetailPage/>}/>
         <Route path='/services' element={<GetJobPage/>}/>
+        <Route path='/login' element={<Login/>}/>
       </Routes>
     </BrowserRouter>
   );
