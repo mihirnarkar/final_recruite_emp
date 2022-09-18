@@ -10,7 +10,7 @@ function About() {
                     <div className="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
                         <div className="row g-0 about-bg rounded overflow-hidden">
                             <div className="col-6 text-start wow zoomIn">
-                                <img className="img-fluid" src="/img/about-1.jpg"/>
+                                <img className="img-fluid" src="img/about-1.jpg"/>
                             </div>
                             <div className="col-6 text-start wow zoomIn">
                                 <img className="img-fluid w-100" src="img/about-2.jpg"/>
