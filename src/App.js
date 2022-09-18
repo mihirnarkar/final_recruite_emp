@@ -1,7 +1,7 @@
 import './App.css';
 import React from 'react';
 import{
-  BrowserRouter,
+  HashRouter,
   Routes,
   Route,
 } from "react-router-dom"
@@ -16,7 +16,7 @@ import Login from './components/security/Login';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
     <ScrollToTop/>
       <Routes>
         <Route path='/' element={<Home/>}/>
@@ -26,7 +26,7 @@ function App() {
         <Route path='/services' element={<GetJobPage/>}/>
         <Route path='/login' element={<Login/>}/>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
