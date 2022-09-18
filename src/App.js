@@ -10,6 +10,7 @@ import Aboutpage from './components/about/Aboutpage';
 import JobListPage from './components/joblist/JobListPage';
 import JobDetailPage from './components/jobdetail/JobDetailPage';
 import ScrollToTop from './components/ScrollToTop';
+import GetJobPage from './components/services/GetJobPage';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Route path='/about' element={<Aboutpage/>}/>
         <Route path='/joblist' element={<JobListPage/>}/>
         <Route path='/jobdetail' element={<JobDetailPage/>}/>
+        <Route path='/services' element={<GetJobPage/>}/>
       </Routes>
     </BrowserRouter>
   );

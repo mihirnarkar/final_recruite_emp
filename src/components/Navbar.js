@@ -32,7 +32,7 @@ function Navbar() {
                         <div className="nav-item dropdown">
                             <Link to="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</Link>
                             <div className="dropdown-menu rounded-0 m-0">
-                                <Link to="/services/job.html" className="dropdown-item">Get a job</Link>
+                                <Link to="/services" className="dropdown-item">Get a job</Link>
                             </div>
                         </div>
 
