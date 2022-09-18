@@ -6,6 +6,7 @@ import Categories_card from './Categories_card'
 import About from './about/About'
 import Footer from './Footer'
 import JobListContent from './joblist/JobListContent'
+import BacktoTop from './BacktoTop'
 
 function Home() {
   return (
@@ -16,6 +17,7 @@ function Home() {
     <Categories_card/>
     <About/>
     <JobListContent/>
+    <BacktoTop/>
     <Footer/>
     </>
   )

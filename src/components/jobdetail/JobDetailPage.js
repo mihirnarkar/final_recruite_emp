@@ -1,4 +1,5 @@
 import React from 'react'
+import BacktoTop from '../BacktoTop'
 import Footer from '../Footer'
 import Navbar from '../Navbar'
 import JobDetailContent from './JobDetailContent'
@@ -10,6 +11,7 @@ function JobDetailPage() {
     <Navbar/>
     <JobDetailHeader/>
     <JobDetailContent/>
+    <BacktoTop/>
     <Footer/>
     </>
   )

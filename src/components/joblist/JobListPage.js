@@ -3,6 +3,7 @@ import Navbar from '../Navbar'
 import Footer from '../Footer'
 import JobListHeader from './JobListHeader'
 import JobListContent from './JobListContent'
+import BacktoTop from '../BacktoTop'
 
 function JobListPage() {
   return (
@@ -10,6 +11,7 @@ function JobListPage() {
     <Navbar/>
     <JobListHeader/>
     <JobListContent/>
+    <BacktoTop/>
     <Footer/>
     </>
   )

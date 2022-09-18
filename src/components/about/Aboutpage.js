@@ -5,6 +5,7 @@ import Footer from '../Footer'
 import AboutHeader from './AboutHeader'
 import AboutApply from './AboutApply'
 import AboutSevices from './AboutSevices'
+import BacktoTop from '../BacktoTop'
 
 function Aboutpage() {
   return (
@@ -14,6 +15,7 @@ function Aboutpage() {
     <About/>
     <AboutSevices/>
     <AboutApply/>
+    <BacktoTop/>
     <Footer/>
     </>
   )
