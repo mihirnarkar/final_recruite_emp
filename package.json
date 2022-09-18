@@ -1,5 +1,6 @@
 {
-  "name": " https://mihirnarkar.github.io/final_recruite_emp",
+  "name": "final_recruite_emp",
+  "homepage" : "https://mihirnarkar.github.io/final_recruite_emp",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
