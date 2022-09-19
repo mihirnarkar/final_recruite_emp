@@ -6,8 +6,10 @@ function Categories_card() {
 
 <>
 
+<h1>testing firebase ci/cd</h1>
+
 {/* <!-- Category Start --> */}
-        <div className="container-xxl py-5">
+        {/* <div className="container-xxl py-5">
             <div className="container">
                 <h1 className="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">Explore By Category</h1>
                 <div className="row g-4">
@@ -100,7 +102,7 @@ function Categories_card() {
 
                 </div>
             </div>
-        </div>
+        </div> */}
         {/* <!-- Category End --> */}
 
 </>
