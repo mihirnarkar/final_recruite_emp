@@ -8,11 +8,13 @@ import BacktoTop from '../BacktoTop'
 function JobListPage() {
   return (
     <>
+    <div class="container-xxl bg-white p-0">
     <Navbar/>
     <JobListHeader/>
     <JobListContent/>
     <BacktoTop/>
     <Footer/>
+    </div>
     </>
   )
 }

@@ -7,10 +7,12 @@ import GetJobHeader from './GetJobHeader'
 function GetJobPage() {
   return (
     <>
+    <div class="container-xxl bg-white p-0">
     <Navbar/>
     <GetJobHeader/>
     <GetJobContent/>
     <Footer/>
+    </div>
     </>
   )
 }

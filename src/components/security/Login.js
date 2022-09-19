@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 function Login() {
     return (
         <>
+        <div class="container-xxl bg-white p-0">
             <br/>
 
             <div className="container-xl wow zoomIn">
@@ -39,10 +40,9 @@ function Login() {
                                     </div>
 
                                     <hr className="mb-4" />
-                                    {/* <!-- <button type="submit" className="btn btn-secondary btn-lg btn-block">Login</button> --> */}
                                     <Link className="btn btn-primary btn-lg btn-block" to="../user/homepage.html">Login</Link>
 
-                                    <br />
+                                    <br /><br/><br/>
                                     <center>Not Registered on RecruiteEMP yet ?</center>
                                     <br />
                                     <center> <Link to="/">Create your account</Link></center>
@@ -66,6 +66,9 @@ function Login() {
             </div>
 
             <br/>
+        </div>
+
+    
         </>
     )
 }

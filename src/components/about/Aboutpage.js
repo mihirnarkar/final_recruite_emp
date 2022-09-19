@@ -10,6 +10,7 @@ import BacktoTop from '../BacktoTop'
 function Aboutpage() {
   return (
     <>
+    <div class="container-xxl bg-white p-0">
     <Navbar/>
     <AboutHeader/>
     <About/>
@@ -17,6 +18,7 @@ function Aboutpage() {
     <AboutApply/>
     <BacktoTop/>
     <Footer/>
+    </div>
     </>
   )
 }

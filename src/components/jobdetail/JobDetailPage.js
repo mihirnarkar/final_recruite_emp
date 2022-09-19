@@ -8,11 +8,13 @@ import JobDetailHeader from './JobDetailHeader'
 function JobDetailPage() {
   return (
     <>
+    <div class="container-xxl bg-white p-0">
     <Navbar/>
     <JobDetailHeader/>
     <JobDetailContent/>
     <BacktoTop/>
     <Footer/>
+    </div>
     </>
   )
 }

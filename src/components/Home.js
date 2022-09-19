@@ -11,6 +11,7 @@ import BacktoTop from './BacktoTop'
 function Home() {
   return (
     <> 
+    <div class="container-xxl bg-white p-0">
     <Navbar/>
     <Carousel/>
     <Search/>
@@ -19,6 +20,7 @@ function Home() {
     <JobListContent/>
     <BacktoTop/>
     <Footer/>
+    </div>
     </>
   )
 }
