@@ -93,3 +93,24 @@
 .carousel{
   opacity: 0.85;
 }
+
+
+/* Signup */
+.signup1{
+  border: 1px solid grey;
+  border-radius: 10px; 
+  background-color: #f0faff;
+}
+
+.signup2{
+  color: green;
+}
+
+.usernavbar1{
+  width:60px;
+  height:60px;
+}
+
+.usernavbar2{
+  color: green
+}
