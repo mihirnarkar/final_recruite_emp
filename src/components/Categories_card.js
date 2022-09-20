@@ -6,8 +6,6 @@ function Categories_card() {
 
 <>
 
-{/* <h1>testing firebase ci/cd, second time</h1> */}
-
 {/* <!-- Category Start --> */}
         <div className="container-xxl py-5">
             <div className="container">
@@ -102,7 +100,7 @@ function Categories_card() {
 
                 </div>
             </div>
-        </div> 
+        </div>
         {/* <!-- Category End --> */}
 
 </>
