@@ -20,6 +20,10 @@ import ViewAccount from './components/security/ViewAccount';
 import ChangePass from './components/security/ChangePass';
 import ChangeEmail from './components/security/ChangeEmail';
 import DeleteAccount from './components/security/DeleteAccount';
+import Support from './components/products/Support&Assistance/Support&Assistance';
+import AI_recommedention from './components/products/AI_Recommendention/AI_Recommendention';
+
+
 
 
 function App() {
@@ -41,6 +45,9 @@ function App() {
         <Route path='/changepassword' element={<ChangePass/>}/>
         <Route path='/changeemail' element={<ChangeEmail/>}/>
         <Route path='/deleteaccount' element={<DeleteAccount/>}/>
+
+        <Route path='/support' element={<Support/>}/>
+        <Route path='/AI_recommedention' element={<AI_recommedention/>}/>
       </Routes>
     </BrowserRouter>
   );
