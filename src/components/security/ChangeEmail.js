@@ -8,6 +8,8 @@ function ChangeEmail() {
     <>
     <UserNavbar/>
     <div>ChangeEmail</div>
+    {/* Purve code starts here */}
+    {/* Purva code ends here */}
     <Footer/>
     </>
   )

@@ -8,6 +8,8 @@ function DeleteAccount() {
     <>
     <UserNavbar/>
     <div>DeleteAccount</div>
+    {/* Purve code starts here */}
+    {/* Purva code ends here */}
     <Footer/>
     </>
   )
