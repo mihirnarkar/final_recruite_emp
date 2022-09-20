@@ -12,8 +12,14 @@ import JobDetailPage from './components/jobdetail/JobDetailPage';
 import ScrollToTop from './components/ScrollToTop';
 import GetJobPage from './components/services/GetJobPage';
 import Login from './components/security/Login';
-import Support from './components/products/Support&Assistance/Support&Assistance';
-import AI_recommedention from './components/products/AI_Recommendention/AI_Recommendention';
+import SignUp from './components/security/SignUp';
+import Homepage from './components/user/Homepage';
+import Resume from './components/user/Resume';
+import TrackApplication from './components/user/TrackApplication';
+import ViewAccount from './components/security/ViewAccount';
+import ChangePass from './components/security/ChangePass';
+import ChangeEmail from './components/security/ChangeEmail';
+import DeleteAccount from './components/security/DeleteAccount';
 
 
 function App() {
@@ -27,8 +33,14 @@ function App() {
         <Route path='/jobdetail' element={<JobDetailPage/>}/>
         <Route path='/services' element={<GetJobPage/>}/>
         <Route path='/login' element={<Login/>}/>
-        <Route path='/support' element={<Support/>}/>
-        <Route path='/AI_recommedention' element={<AI_recommedention/>}/>
+        <Route path='/signup' element={<SignUp/>}/>
+        <Route path='/userhomepage' element={<Homepage/>}/>
+        <Route path='/resume' element={<Resume/>}/>
+        <Route path='/trackapp' element={<TrackApplication/>}/>
+        <Route path='/viewaccount' element={<ViewAccount/>}/>
+        <Route path='/changepassword' element={<ChangePass/>}/>
+        <Route path='/changeemail' element={<ChangeEmail/>}/>
+        <Route path='/deleteaccount' element={<DeleteAccount/>}/>
       </Routes>
     </BrowserRouter>
   );
@@ -37,4 +49,3 @@ function App() {
 
 
 export default App;
-
