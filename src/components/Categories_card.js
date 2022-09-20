@@ -6,7 +6,7 @@ function Categories_card() {
 
 <>
 
-<h1>testing firebase ci/cd, second time</h1>
+{/* <h1>testing firebase ci/cd, second time</h1> */}
 
 {/* <!-- Category Start --> */}
         <div className="container-xxl py-5">
