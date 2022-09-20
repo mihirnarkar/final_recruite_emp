@@ -12,6 +12,8 @@ import JobDetailPage from './components/jobdetail/JobDetailPage';
 import ScrollToTop from './components/ScrollToTop';
 import GetJobPage from './components/services/GetJobPage';
 import Login from './components/security/Login';
+import Support from './components/products/Support&Assistance/Support&Assistance';
+import AI_recommedention from './components/products/AI_Recommendention/AI_Recommendention';
 
 
 function App() {
@@ -25,6 +27,8 @@ function App() {
         <Route path='/jobdetail' element={<JobDetailPage/>}/>
         <Route path='/services' element={<GetJobPage/>}/>
         <Route path='/login' element={<Login/>}/>
+        <Route path='/support' element={<Support/>}/>
+        <Route path='/AI_recommedention' element={<AI_recommedention/>}/>
       </Routes>
     </BrowserRouter>
   );
