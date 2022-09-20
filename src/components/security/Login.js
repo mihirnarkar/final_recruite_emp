@@ -40,12 +40,12 @@ function Login() {
                                     </div>
 
                                     <hr className="mb-4" />
-                                    <Link className="btn btn-primary btn-lg btn-block" to="../user/homepage.html">Login</Link>
+                                    <Link className="btn btn-primary btn-lg btn-block" to="/userhomepage">Login</Link>
 
                                     <br /><br/><br/>
                                     <center>Not Registered on RecruiteEMP yet ?</center>
                                     <br />
-                                    <center> <Link to="/">Create your account</Link></center>
+                                    <center> <Link to="/signup">Create your account</Link></center>
                                 </form>
                             </div>
                         </div>
