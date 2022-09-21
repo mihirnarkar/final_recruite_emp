@@ -13,6 +13,33 @@
   }
 }
 
+
+/* My css */
+
+
+.candhiring-font{
+
+  min-height: 400px;
+}
+
+.candidhiringobject {
+
+  object-fit: cover;
+
+}
+
+
+.candidhiringcolor {
+
+color: #4831f3;
+
+}
+
+/* My css */
+
+
+
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
