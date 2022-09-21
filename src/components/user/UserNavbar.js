@@ -70,7 +70,7 @@ function UserNavbar() {
                                 </div>
 
                                 <Link className="dropdown-item" to="/viewaccount">View account</Link>
-                                <Link className="dropdown-item" to="/changepassword">Change password</Link>
+                                <Link className="dropdown-item" to="/changePass">Change password</Link>
                                 <Link className="dropdown-item" to="/changeemail">Change email</Link>
                                 <Link className="dropdown-item" to="/deleteaccount">Delete account</Link>
                             </div>
