@@ -38,11 +38,11 @@ function UserNavbar() {
                         <div className="nav-item dropdown">
                             <Link to="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Products</Link>
                             <div className="dropdown-menu rounded-0 m-0">
-                                <Link to="/products/candidate_hiring.html" className="dropdown-item">Candidate Sourcing</Link>
-                                <Link to="/products/ai_recommedention.html" className="dropdown-item">AI Recommedention</Link>
-                                <Link to="/products/post_job.html" className="dropdown-item">Post Job</Link>
-                                <Link to="/products/support.html" className="dropdown-item">Support & Assistance</Link>
-                            </div>
+                                <Link to="/postjob" className="dropdown-item">Candidate Sourcing</Link>
+                                <Link to="/AI_recommedention" className="dropdown-item">AI Recommedention</Link>
+                                <Link to="/candidatehiring" className="dropdown-item">Post Job</Link>
+                                <Link to="/support" className="dropdown-item">Support Assistance</Link>
+                            </div> 
                         </div>
                         <div className="nav-item dropdown">
                             <Link to="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">
