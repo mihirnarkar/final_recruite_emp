@@ -26,8 +26,8 @@ function ChangePass() {
               <input type="password" className="form-control input" id="exampleInputPassword1" />
             </div>
 
-            <a className="btn btn-danger btn-lg btn-block input2"
-              href="login.html">Change password</a>
+            <Link className="btn btn-danger btn-lg btn-block input2"
+              to="/ChangePassword">Change password</Link>
           </div>
 
         </div>
