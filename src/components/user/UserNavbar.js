@@ -32,8 +32,8 @@ function UserNavbar() {
                             </div>
                         </div>
 
-                        <Link to="/course/course_homepage.html" className="nav-item nav-link">Course</Link>
-                        <Link to="../discussion.html" className="nav-item nav-link">FAQ</Link>
+                        <Link to="/" className="nav-item nav-link">Course</Link>
+                        <Link to="/discussion" className="nav-item nav-link">FAQ</Link>
 
                         <div className="nav-item dropdown">
                             <Link to="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Products</Link>

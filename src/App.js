@@ -24,6 +24,7 @@ import Support from './components/products/Support&Assistance/Support&Assistance
 import AI_recommedention from './components/products/AI_Recommendention/AI_Recommendention';
 import Candidate_Hiring from './components/products/CandidateHiring/candidatehiringpage';
 import Post_Job from './components/products/PostJob/PostJobPage';
+import Discussion from './components/Discussion/DiscussionPage'
 
 
 
@@ -53,6 +54,11 @@ function App() {
         <Route path='/AI_recommedention' element={<AI_recommedention/>}/>
         <Route path='/candidatehiring' element={<Candidate_Hiring/>}/>
         <Route path='/postjob' element={<Post_Job/>}/>
+
+        <Route path='/discussion' element={<Discussion/>}/>
+
+
+
       </Routes>
     </BrowserRouter>
   );
