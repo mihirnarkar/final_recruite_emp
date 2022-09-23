@@ -1,7 +1,7 @@
 import './App.css';
 import React from 'react';
 import{
-  BrowserRouter,
+  HashRouter,
   Routes,
   Route,
 } from "react-router-dom"
@@ -28,7 +28,7 @@ import AI_recommedention from './components/products/AI_Recommendention/AI_Recom
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
     <ScrollToTop/>
       <Routes>
         <Route path='/' element={<Home/>}/>
@@ -49,7 +49,7 @@ function App() {
         <Route path='/support' element={<Support/>}/>
         <Route path='/AI_recommedention' element={<AI_recommedention/>}/>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
