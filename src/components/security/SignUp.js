@@ -83,7 +83,7 @@ function SignUp() {
 
                   <hr className="mb-4" />
                   {/* <!-- <button type="submit" className="btn btn-secondary btn-lg btn-block">Submit</button> --> */}
-                  <Link className="btn btn-primary btn-lg btn-block" to="/">Submit</Link>
+                  <Link className="btn btn-primary btn-lg btn-block" to="/userhomepage">Submit</Link>
 
                   <br />
 
