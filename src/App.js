@@ -51,7 +51,7 @@ function App() {
 
         <Route path='/support' element={<Support/>}/>
         <Route path='/AI_recommedention' element={<AI_recommedention/>}/>
-        <Route path='/AI_recommedention' element={<AI_recommedention/>}/>
+        {/* <Route path='/AI_recommedention' element={<AI_recommedention/>}/> */}
         <Route path='/candidatehiring' element={<Candidate_Hiring/>}/>
         <Route path='/postjob' element={<Post_Job/>}/>
 
