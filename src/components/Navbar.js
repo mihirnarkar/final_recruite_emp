@@ -48,7 +48,7 @@ function Navbar() {
                                 <Link to="/support" className="dropdown-item">Support Assistance</Link>
                             </div> 
                         </div>
-                        <Link to="/login" className="nav-item nav-link">Log In</Link>
+                        <a href="/security/signin.html" className="nav-item nav-link">Log In</a>
 
                     </div>
                     <Link to="/signup" className="btn btn-secondary rounded-0 py-4 px-lg-5 d-none d-lg-block">Gets
