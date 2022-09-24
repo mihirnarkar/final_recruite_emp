@@ -1,7 +1,7 @@
 import './App.css';
 import React from 'react';
 import{
-  HashRouter,
+  BrowserRouter,
   Routes,
   Route,
 } from "react-router-dom"
@@ -31,7 +31,7 @@ import Discussion from './components/Discussion/DiscussionPage'
 
 function App() {
   return (
-    <HashRouter>
+    <BrowserRouter>
     <ScrollToTop/>
       <Routes>
         <Route path='/' element={<Home/>}/>
@@ -56,11 +56,12 @@ function App() {
         <Route path='/postjob' element={<Post_Job/>}/>
 
         <Route path='/discussion' element={<Discussion/>}/>
+        {/* <Route path='/signin' element={}/> */}
 
 
 
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
