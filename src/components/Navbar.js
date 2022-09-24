@@ -51,8 +51,8 @@ function Navbar() {
                         <a href="/security/signin.html" className="nav-item nav-link">Log In</a>
 
                     </div>
-                    <Link to="/signup" className="btn btn-secondary rounded-0 py-4 px-lg-5 d-none d-lg-block">Gets
-                        started<i className="fa fa-arrow-right ms-3"></i></Link>
+                    <a href="/security/signup1.html" className="btn btn-secondary rounded-0 py-4 px-lg-5 d-none d-lg-block">Gets
+                        started<i className="fa fa-arrow-right ms-3"></i></a>
                 </div>
             </nav>
             {/* Navbar ends */}
