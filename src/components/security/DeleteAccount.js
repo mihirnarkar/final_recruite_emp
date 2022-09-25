@@ -7,7 +7,6 @@ function DeleteAccount() {
   return (
     <>
     <UserNavbar/>
-    <div>DeleteAccount</div>
     {/* Purve code starts here */}
     <div className="container-md w-100 mt-5 wow zoomIn">
 
