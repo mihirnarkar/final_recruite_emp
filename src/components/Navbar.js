@@ -36,7 +36,7 @@ function Navbar() {
                             </div>
                         </div>
 
-                        <Link to="course/course_homepage.html" className="nav-item nav-link">Course</Link>
+                        <a href=" http://localhost:3001" target="_blank" className="nav-item nav-link">Course</a>
 
 
                         <div className="nav-item dropdown">
