@@ -1,10 +1,19 @@
 import './App.css';
 
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom"
+import CourseHome from './components/CourseHome';
+
 function App() {
   return (
-    <div className="App">
-      <h1>This is course page</h1>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<CourseHome/>} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
