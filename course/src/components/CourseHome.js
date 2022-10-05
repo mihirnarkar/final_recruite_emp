@@ -5,7 +5,7 @@ import Navbar from './Navbar'
 function CourseHome() {
   return (
     <>
-    <Navbar title="RecruitEmp"/>
+    <Navbar/>
     <Footer/>
     </>
   )

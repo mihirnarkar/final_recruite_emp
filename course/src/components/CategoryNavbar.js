@@ -8,7 +8,7 @@ export default function CategoryNavbar(props) {
         <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
             <Link to="/index.html" class="navbar-brand p-0"> 
                 {/* <!-- <h1 class="m-0"><i class="fa fa-user-tie me-2"></i>recruiteEMP</h1> --> */}
-                <h1 class="m-0"> <img src="/img/logo.gif" alt="Computer man" style={{height:"60px",width:"60px"}}/> {props.title}</h1>
+                <h1 class="m-0"> <img src="/img/logo.gif" alt="Computer man" style={{height:"60px",width:"60px"}}/> recruitEMP</h1>
             </Link>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="fa fa-bars"></span>
@@ -19,8 +19,8 @@ export default function CategoryNavbar(props) {
                     <div class="nav-item dropdown">
                         <Link to="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Category</Link>
                         <div class="dropdown-menu m-0">
-                            <Link to="/course/course_category/architecture.html" class="dropdown-item">Architecture</Link>
-                            <Link to="/course/course_category/business.html" class="dropdown-item">Business</Link>
+                            <Link to="/architecture" class="dropdown-item">Architecture</Link>
+                            <Link to="/business" class="dropdown-item">Business</Link>
                             <Link to="/course/course_category/data_science.html" class="dropdown-item">Data science</Link>
                             <Link to="/course/course_category/design.html" class="dropdown-item">Design</Link>
                             <Link to="/course/course_category/programming.html" class="dropdown-item">Programming</Link>
@@ -43,11 +43,11 @@ export default function CategoryNavbar(props) {
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     {/* <!-- <img class="w-100" src="../img/carousel-1.jpg" alt="Image"> --> */}
-                    <img class="w-100" src={props.path1} alt="Image"/>
+                    <img class="w-100" src={props.path} alt="Image"/>
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3 CategoryNavbar">
-                            <h5 class="text-white text-uppercase mb-3 animated slideInDown">Architecture</h5>
-                            <h1 class="display-1 text-white mb-md-4 animated zoomIn">Learn AutoCAD, Revit and AutoCAD 3D
+                            <h5 class="text-white text-uppercase mb-3 animated slideInDown">{props.courseName}</h5>
+                            <h1 class="display-1 text-white mb-md-4 animated zoomIn">{props.courseDesc}
                             </h1>
                             <Link to="quote.html"
                                 class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Enrolled</Link>

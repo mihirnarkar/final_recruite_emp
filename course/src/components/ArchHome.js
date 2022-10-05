@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
     {/* <Navbar title="RecruitEmpArch" path1={"../img/architectureBg.jpeg"}/> */}
-    <CategoryNavbar title="RecruitEmpArch" path1="img/architectureBg.jpeg" />
+    <CategoryNavbar path="img/architectureBg.jpeg" courseName="Architecture" courseDesc="Learn AutoCAD, Revit and AutoCAD 3D" />
 
     {/* Main content start */}
     <Content/>

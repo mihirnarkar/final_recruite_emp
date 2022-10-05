@@ -6,14 +6,16 @@ import {
   Route,
 } from "react-router-dom"
 import CourseHome from './components/CourseHome';
-import Home from './components/ArchHome';
+import ArchHome from './components/ArchHome';
+import BusinessHome from './components/BusinessHome';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<CourseHome/>} />
-        <Route path='/architecture' element={<Home/>} />
+        <Route path='/architecture' element={<ArchHome/>} />
+        <Route path='/business' element={<BusinessHome/>} />
       </Routes>
     </BrowserRouter>
   );

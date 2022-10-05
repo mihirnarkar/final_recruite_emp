@@ -8,7 +8,7 @@ export default function Navbar(props) {
     <div className="container-fluid position-relative p-0">
         <nav className="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
             <Link to="/index.html" className="navbar-brand p-0">
-                <h1 className="m-0"> <img src="/img/logo.gif" className='img' alt="Computer man"/> {props.title}</h1>
+                <h1 className="m-0"> <img src="/img/logo.gif" className='img' alt="Computer man"/> recruitEMP</h1>
             </Link>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span className="fa fa-bars"></span>
@@ -22,7 +22,7 @@ export default function Navbar(props) {
                         <Link to="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Category</Link>
                         <div className="dropdown-menu m-0">
                             <Link to="/architecture" className="dropdown-item">Architecture</Link>
-                            <Link to="course_category/business.html" className="dropdown-item">Business</Link>
+                            <Link to="/business" className="dropdown-item">Business</Link>
                             <Link to="course_category/data_science.html" className="dropdown-item">Data science</Link>
                             <Link to="course_category/design.html" className="dropdown-item">Design</Link>
                             <Link to="course_category/programming.html" className="dropdown-item">Programming</Link>
@@ -34,8 +34,6 @@ export default function Navbar(props) {
                             <Link to="../security/login.html" className="dropdown-item">Logout</Link>                    
                         </div>
                     </div>
-                    {/* <!-- <Link to="../security/login.html" className="nav-item nav-link">Login</Link> */}
-                    {/* <Link to="../contact.html" className="nav-item nav-link">Contact</Link> --> */}
                 </div>
                 <butaton type="button" className="btn text-primary ms-3" data-bs-toggle="modal"
                     data-bs-target="#searchModal"><i className="fa fa-search"></i></butaton>
