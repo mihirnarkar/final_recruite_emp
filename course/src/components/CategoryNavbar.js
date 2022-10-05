@@ -21,9 +21,9 @@ export default function CategoryNavbar(props) {
                         <div class="dropdown-menu m-0">
                             <Link to="/architecture" class="dropdown-item">Architecture</Link>
                             <Link to="/business" class="dropdown-item">Business</Link>
-                            <Link to="/course/course_category/data_science.html" class="dropdown-item">Data science</Link>
+                            <Link to="/datascience" class="dropdown-item">Data science</Link>
                             <Link to="/course/course_category/design.html" class="dropdown-item">Design</Link>
-                            <Link to="/course/course_category/programming.html" class="dropdown-item">Programming</Link>
+                            <Link to="/programming" class="dropdown-item">Programming</Link>
                         </div>
                     </div>
                     <div class="nav-item dropdown">
