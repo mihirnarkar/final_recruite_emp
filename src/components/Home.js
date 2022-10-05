@@ -12,7 +12,7 @@ function Home() {
   return (
     <> 
     <div class="container-xxl bg-white p-0">
-    <Navbar/>
+    <Navbar title="RecruiteEmp"/>
     <Carousel/>
     <Search/>
     <Categories_card/>

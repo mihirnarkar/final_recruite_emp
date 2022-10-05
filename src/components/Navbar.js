@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-function Navbar() {
+function Navbar(props) {
     return (
         <>
             {/* Navbar starts */}
@@ -10,7 +10,7 @@ function Navbar() {
                 <span>
                     <img src='/img/logo.gif' className='logo' />
                 </span>
-                    <h1 className="m-2 text-secondary "> RecruiteEmp</h1>
+                    <h1 className="m-2 text-secondary "> {props.title}</h1>
                 </Link>
                 <button type="button" className="navbar-toggler me-4" data-bs-toggle="collapse"
                     data-bs-target="#navbarCollapse">

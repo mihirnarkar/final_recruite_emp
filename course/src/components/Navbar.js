@@ -1,44 +1,45 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-function Navbar() {
+export default function Navbar(props) {
   return (
     <>
     {/* Navbar starts */}
     <div className="container-fluid position-relative p-0">
         <nav className="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
-            <a href="/index.html" className="navbar-brand p-0">
-                <h1 className="m-0"> <img src="/img/logo.gif" className='img' alt="Computer man"/> RecruiteEmp</h1>
-            </a>
+            <Link to="/index.html" className="navbar-brand p-0">
+                <h1 className="m-0"> <img src="/img/logo.gif" className='img' alt="Computer man"/> {props.title}</h1>
+            </Link>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span className="fa fa-bars"></span>
             </button>
             <div className="collapse navbar-collapse" id="navbarCollapse">
                 <div className="navbar-nav ms-auto py-0">
-                    <a href="http://localhost:3000" className="nav-item nav-link active">Home</a>
-                    {/* <!-- <a href="about.html" className="nav-item nav-link">About</a> -->
-                    <!-- <a href="service.html" className="nav-item nav-link">Services</a> --> */}
+                    <Link to="http://localhost:3000" className="nav-item nav-link active">Home</Link>
+                    {/* <!-- <Link to="about.html" className="nav-item nav-link">About</Link> -->
+                    <!-- <Link to="service.html" className="nav-item nav-link">Services</Link> --> */}
                     <div className="nav-item dropdown">
-                        <a href="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Category</a>
+                        <Link to="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Category</Link>
                         <div className="dropdown-menu m-0">
-                            <a href="course_category/architecture.html" className="dropdown-item">Architecture</a>
-                            <a href="course_category/business.html" className="dropdown-item">Business</a>
-                            <a href="course_category/data_science.html" className="dropdown-item">Data science</a>
-                            <a href="course_category/design.html" className="dropdown-item">Design</a>
-                            <a href="course_category/programming.html" className="dropdown-item">Programming</a>
+                            <Link to="/architecture" className="dropdown-item">Architecture</Link>
+                            <Link to="course_category/business.html" className="dropdown-item">Business</Link>
+                            <Link to="course_category/data_science.html" className="dropdown-item">Data science</Link>
+                            <Link to="course_category/design.html" className="dropdown-item">Design</Link>
+                            <Link to="course_category/programming.html" className="dropdown-item">Programming</Link>
                         </div>
                     </div>
                     <div className="nav-item dropdown">
-                        <a href="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">login</a>
+                        <Link to="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">login</Link>
                         <div className="dropdown-menu m-0">
-                            <a href="../security/login.html" className="dropdown-item">Logout</a>                    
+                            <Link to="../security/login.html" className="dropdown-item">Logout</Link>                    
                         </div>
                     </div>
-                    {/* <!-- <a href="../security/login.html" className="nav-item nav-link">Login</a> */}
-                    {/* <a href="../contact.html" className="nav-item nav-link">Contact</a> --> */}
+                    {/* <!-- <Link to="../security/login.html" className="nav-item nav-link">Login</Link> */}
+                    {/* <Link to="../contact.html" className="nav-item nav-link">Contact</Link> --> */}
                 </div>
                 <butaton type="button" className="btn text-primary ms-3" data-bs-toggle="modal"
                     data-bs-target="#searchModal"><i className="fa fa-search"></i></butaton>
-                <a href="../security/signup.html" className="btn btn-primary py-2 px-4 ms-3">Sign Up</a>
+                <Link to="../security/signup.html" className="btn btn-primary py-2 px-4 ms-3">Sign Up</Link>
             </div>
         </nav>
 
@@ -50,10 +51,10 @@ function Navbar() {
                         <div className="p-3 headerCarousel">
                             <h5 className="text-white text-uppercase mb-3 animated slideInDown">recruite-EMP Courses</h5>
                             <h1 className="display-1 text-white mb-md-4 animated zoomIn">Learn from best</h1>
-                            <a href="quote.html"
-                                className="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Enrolled</a>
-                            <a href="" className="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">Contact
-                                Us</a>
+                            <Link to="quote.html"
+                                className="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Enrolled</Link>
+                            <Link to="" className="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">Contact
+                                Us</Link>
                         </div>
                     </div>
                 </div>
@@ -64,10 +65,10 @@ function Navbar() {
                             <h5 className="text-white text-uppercase mb-3 animated slideInDown">Online certified trainings
                             </h5>
                             <h3 className="display-1 text-white mb-md-4 animated zoomIn">Enroll now</h3>
-                            <a href="quote.html"
-                                className="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Enrolled</a>
-                            <a href="" className="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">Contact
-                                Us</a>
+                            <Link to="quote.html"
+                                className="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Enrolled</Link>
+                            <Link to="" className="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">Contact
+                                Us</Link>
                         </div>
                     </div>
                 </div>
@@ -87,4 +88,3 @@ function Navbar() {
   )
 }
 
-export default Navbar

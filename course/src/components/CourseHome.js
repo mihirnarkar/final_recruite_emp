@@ -1,10 +1,12 @@
 import React from 'react'
+import Footer from './Footer'
 import Navbar from './Navbar'
 
 function CourseHome() {
   return (
     <>
-    <Navbar/>
+    <Navbar title="RecruitEmp"/>
+    <Footer/>
     </>
   )
 }
