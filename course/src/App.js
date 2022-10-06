@@ -10,6 +10,9 @@ import ArchHome from './components/ArchHome';
 import BusinessHome from './components/BusinessHome';
 import DatascienceHome from './components/DatascienceHome';
 import ProgrammingHome from './components/ProgrammingHome';
+import DesignHome from './components/DesignHome';
+
+
 
 function App() {
   return (
@@ -20,6 +23,7 @@ function App() {
         <Route path='/business' element={<BusinessHome/>} />
         <Route path='/datascience' element={<DatascienceHome/>} />
         <Route path='/programming' element={<ProgrammingHome/>} />
+        <Route path='/designing' element={<DesignHome/>}  />
       </Routes>
     </BrowserRouter>
   );

@@ -22,7 +22,7 @@ export default function CategoryNavbar(props) {
                             <Link to="/architecture" class="dropdown-item">Architecture</Link>
                             <Link to="/business" class="dropdown-item">Business</Link>
                             <Link to="/datascience" class="dropdown-item">Data science</Link>
-                            <Link to="/course/course_category/design.html" class="dropdown-item">Design</Link>
+                            <Link to="/designing" class="dropdown-item">Design</Link>
                             <Link to="/programming" class="dropdown-item">Programming</Link>
                         </div>
                     </div>
