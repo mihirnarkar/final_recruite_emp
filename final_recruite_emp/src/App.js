@@ -1,5 +1,5 @@
 import './App.css';
-import React, { useState, useEffect } from "react";
+import React from "react";
 import{
   BrowserRouter,
   Routes,
@@ -7,8 +7,17 @@ import{
 } from "react-router-dom"
 import Home from './components/Home';
 import Aboutpage from './components/about/Aboutpage';
-import JobListPage from './components/joblist/JobListPage';
-import JobDetailPage from './components/jobdetail/JobDetailPage';
+import JobListPage from './components/JobListPage';
+
+// Job detail pages navigation starts
+import JobDetailPage1 from './components/JobDetailPageCat1';
+import JobDetailPage2 from './components/JobDetailPageCat2';
+import JobDetailPage3 from './components/JobDetailPageCat3';
+import JobDetailPage4 from './components/JobDetailPageCat4';
+import JobDetailPage5 from './components/JobDetailPageCat5';
+// Job detail page navigation ends
+
+
 import ScrollToTop from './components/ScrollToTop';
 import GetJobPage from './components/services/GetJobPage';
 import Login from './components/security/Login';
@@ -82,14 +91,18 @@ function App() {
                     <input type='submit' value='submit' />
 </form> */}
 
-
-
-
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/about' element={<Aboutpage/>}/>
         <Route path='/joblist' element={<JobListPage/>}/>
-        <Route path='/jobdetail' element={<JobDetailPage/>}/>
+
+        {/* Job detail page */}
+        <Route path='/jobdetail1' element={<JobDetailPage1/>}/>
+        <Route path='/jobdetail2' element={<JobDetailPage2/>}/>
+        <Route path='/jobdetail3' element={<JobDetailPage3/>}/>
+        <Route path='/jobdetail4' element={<JobDetailPage4/>}/>
+        <Route path='/jobdetail5' element={<JobDetailPage5/>}/>
+
         <Route path='/services' element={<GetJobPage/>}/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/signup' element={<SignUp/>}/>
@@ -108,6 +121,7 @@ function App() {
         <Route path='/postjob' element={<Post_Job/>}/>
 
         <Route path='/discussion' element={<Discussion/>}/>
+
         {/* <Route path='/signin' element={}/> */}
 
 

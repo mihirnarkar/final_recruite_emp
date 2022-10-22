@@ -5,7 +5,7 @@ import Search from './Search'
 import Categories_card from './Categories_card'
 import About from './about/About'
 import Footer from './Footer'
-import JobListContent from './joblist/JobListContent'
+import JobListContent from './JobListContent'
 import BacktoTop from './BacktoTop'
 
 function Home() {
@@ -17,7 +17,7 @@ function Home() {
     <Search/>
     <Categories_card/>
     <About/>
-    <JobListContent/>
+    <JobListContent jobName1="Software Developer" jobName2="Marketing Manager" jobName3="Product Designer" jobName4="Creative Director" jobName5="Wordpress Developer"/>
     <BacktoTop/>
     <Footer/>
     </div>

@@ -1,6 +1,6 @@
 import React from 'react'
 
-function JobDetailContent() {
+function JobDetailContent(props) {
   return (
     <>
     {/* Job detail start */}
@@ -11,7 +11,7 @@ function JobDetailContent() {
                         <div className="d-flex align-items-center mb-5">
                             <img className="flex-shrink-0 img-fluid border rounded jobdetail" src="img/com-logo-2.jpg" alt=""/>
                             <div className="text-start ps-4">
-                                <h3 className="mb-3">Marketing Manager</h3>
+                                <h3 className="mb-3">{props.jobName}</h3>
                                 <span className="text-truncate me-3"><i className="fa fa-map-marker-alt text-secondary me-2"></i>New York, USA</span>
                                 <span className="text-truncate me-3"><i className="far fa-clock text-secondary me-2"></i>Full Time</span>
                                 <span className="text-truncate me-0"><i className="far fa-money-bill-alt text-secondary me-2"></i>$123 - $456</span>
