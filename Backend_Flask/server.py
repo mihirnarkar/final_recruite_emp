@@ -36,17 +36,19 @@ def get_time():
 @app.route('/userhomepage', methods=["POST"])
 def login():
 
-    print("login function")
-    print(request.form.get('username'))
-    print(request.form.get('password'))
+    
 
     username = request.form.get('username')
     password = request.form.get('password')
 
     if(username != '' and password != ''):
 
+        print("login function")
+        print(request.form.get('username'))
+        print(request.form.get('password'))
+
         mydb = mysql.connector.connect(
-            host='localhost', database='recruitemp', user='root', password='')
+            host='sql787.main-hosting.eu', database='u844323284_Recruitemp', user='u844323284_project', password='Recruitemp@1234')
         sql_query = f"SELECT * FROM `user` WHERE `username`='{username}' AND `password`='{password}'"
         print(sql_query)
         cursor = mydb.cursor()
@@ -83,10 +85,10 @@ def signin():
 
         if (request.form.get('username') != '' and request.form.get('password') != '' and request.form.get('password') == request.form.get('cnf_password')):
 
-            mydb = mysql.connector.connect(host='localhost',
-                                           database='recruitemp',
-                                           user='root',
-                                           password='')
+            mydb = mysql.connector.connect(host='sql787.main-hosting.eu',
+                                           database='u844323284_Recruitemp',
+                                           user='u844323284_project',
+                                           password='Recruitemp@1234')
             print("sign in function")
             print(mydb)
             sql_query = f"INSERT INTO `user` (`username`, `password`, `email`, `state`, `describe`) VALUES ('{username}','{password}','{email}','{describe}', '{state}')"
