@@ -34,6 +34,9 @@ import AI_recommedention from './components/products/AI_Recommendention/AI_Recom
 import Candidate_Hiring from './components/products/CandidateHiring/candidatehiringpage';
 import Post_Job from './components/products/PostJob/PostJobPage';
 import Discussion from './components/Discussion/DiscussionPage'
+import JobAttemptTest from './components/JobAttemptTest';
+import JobApplyPage2 from './components/JobApplyPage2';
+import JobApplyPage1 from './components/JobApplyPage1';
 
 
 
@@ -122,7 +125,16 @@ function App() {
 
         <Route path='/discussion' element={<Discussion/>}/>
 
-        {/* <Route path='/signin' element={}/> */}
+
+        {/* Attempt test job navigation */}
+        <Route path='/jobAttemptTest' element={<JobAttemptTest/>}/>
+
+        {/* Apply Job Navigation page 1 */}
+        <Route path='/jobApplypage1' element={<JobApplyPage1/>}/>
+
+        {/* Apply Job Navigation page 2 */}
+        <Route path='/jobApplypage2' element={<JobApplyPage2/>}/>
+
 
 
 

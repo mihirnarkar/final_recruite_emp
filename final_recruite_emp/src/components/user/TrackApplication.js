@@ -1,4 +1,5 @@
 import React from 'react'
+import Alert from '../Alert'
 import Footer from '../Footer'
 import UserNavbar from './UserNavbar'
 
@@ -8,6 +9,8 @@ function TrackApplication() {
       <div class="container-xxl bg-white p-0">
 
         <UserNavbar />
+        <br></br>
+        <Alert alertType="success" alertStatus="Success" alertMssg="Your application has been submitted sucessfully" />
         {/* Container starts here */}
         <div className="container-md w-100 mt-5 wow zoomIn">
           <br />
