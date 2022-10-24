@@ -77,9 +77,9 @@ function UserNavbar() {
                         </div>
                     </div>
 
-                    <Link to="../services/resume.html"
+                    <a href="http://localhost:3001/"
                         className="btn btn-secondary rounded-0 py-4 px-lg-3 d-none d-lg-block">Resume<i
-                            className="fa fa-arrow-right ms-3"></i></Link>
+                            className="fa fa-arrow-right ms-3"></i></a>
 
                 </div>
             </nav>
