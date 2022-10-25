@@ -70,8 +70,12 @@ function JobApplyPage2() {
                       <div className="col-12 col-sm-6">
                         <input type="text" className="form-control" placeholder="Degree specialization" />
                       </div>
-                      <div className="col-12 col-sm-6">
+                      {/* <div className="col-12 col-sm-6">
                         <input type="file" className="form-control" placeholder="Upload resume" />
+                      </div> */}
+                      <div className="input-group col-12 col-sm-6">
+                        <span class="input-group-text"><b>Resume</b></span>
+                        <input type="file" className="form-control" placeholder="Current Location" />
                       </div>
 
                     </div>

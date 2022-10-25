@@ -28,7 +28,7 @@ function UserNavbar() {
                             <Link to="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</Link>
                             <div className="dropdown-menu rounded-0 m-0">
                                 <Link to="/services" className="dropdown-item">Get a job</Link>
-                                <Link to="/services/resume.html" className="dropdown-item">Build your resume</Link>
+                                <a href="http://localhost:3001" target="_blank"  className="dropdown-item">Build your resume</a>
                             </div>
                         </div>
 
@@ -77,7 +77,7 @@ function UserNavbar() {
                         </div>
                     </div>
 
-                    <a href="http://localhost:3001/"
+                    <a href="http://localhost:3001/" target="_blank" 
                         className="btn btn-secondary rounded-0 py-4 px-lg-3 d-none d-lg-block">Resume<i
                             className="fa fa-arrow-right ms-3"></i></a>
 
