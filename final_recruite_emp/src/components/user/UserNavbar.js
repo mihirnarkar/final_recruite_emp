@@ -28,6 +28,7 @@ function UserNavbar() {
                             <Link to="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</Link>
                             <div className="dropdown-menu rounded-0 m-0">
                                 <Link to="/services" className="dropdown-item">Get a job</Link>
+                                <Link to="/Resume_word_cloud" className="dropdown-item">Word Cloud</Link>
                                 <a href="http://localhost:3001" target="_blank"  className="dropdown-item">Build your resume</a>
                             </div>
                         </div>

@@ -1,8 +1,18 @@
-from flask import Flask, redirect, url_for, render_template, request, redirect
-
+from unittest import result
+from flask import Flask, redirect, flash,url_for, render_template, request, redirect
 import mysql.connector
+import resume_word_cloud
 
 app = Flask(__name__)
+app.secret_key = "super secret key"
+ 
+
+test_data = {
+        'Name': "jatin",
+        "Age": "22",
+        "Date": 1,
+        "programming": "python"
+    }
 
 
 @app.route("/", methods=['POST'])
@@ -24,13 +34,8 @@ def index():
 @app.route('/data')
 def get_time():
 
-    data = {
-        'Name': "jatin",
-        "Age": "22",
-        "Date": 1,
-        "programming": "python"
-    }
-    return data
+    
+    return test_data
 
 
 @app.route('/userhomepage', methods=["POST"])
@@ -104,6 +109,30 @@ def signin():
         print(e)
         # If user registration is not okay then it will be go to the same page
     return redirect('http://localhost:3000/security/signup1.html')
+
+
+@app.route('/Resume_word_cloud', methods=["POST"])
+def resume_word_cloud_checker():
+    print("resume_word_cloud")
+    username = request.form.get('wordcloud')
+    password = request.form.get('desc')
+
+
+    print(username, password)
+
+    result_matched = resume_word_cloud.start_word_cloud()
+
+    print(result_matched)
+    flash("You have been flashed hahaha", "info")
+
+    return test_data
+
+
+
+
+
+
+
 
 
 # Running app
