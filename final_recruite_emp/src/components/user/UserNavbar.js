@@ -15,15 +15,15 @@ function UserNavbar() {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarCollapse">
                     <div className="navbar-nav ms-auto p-4 p-lg-0">
-                        <Link to="/" className="nav-item nav-link">Home</Link>
-                        <Link to="/about" className="nav-item nav-link">About</Link>
-                        <div className="nav-item dropdown">
+                        <Link to="/userhomepage" className="nav-item nav-link">Home</Link>
+                        {/* <Link to="/about" className="nav-item nav-link">About</Link> */}
+                        {/* <div className="nav-item dropdown">
                             <Link to="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Jobs</Link>
                             <div className="dropdown-menu rounded-0 m-0">
                                 <Link to="/joblist" className="dropdown-item">Job List</Link>
                                 <Link to="/jobdetail" className="dropdown-item">Job Detail</Link>
                             </div>
-                        </div>
+                        </div> */}
                         <div className="nav-item dropdown">
                             <Link to="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</Link>
                             <div className="dropdown-menu rounded-0 m-0">
@@ -35,7 +35,7 @@ function UserNavbar() {
                         <Link to="/" className="nav-item nav-link">Course</Link>
                         <Link to="/discussion" className="nav-item nav-link">FAQ</Link>
 
-                        <div className="nav-item dropdown">
+                        {/* <div className="nav-item dropdown">
                             <Link to="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Products</Link>
                             <div className="dropdown-menu rounded-0 m-0">
                                 <Link to="/postjob" className="dropdown-item">Candidate Sourcing</Link>
@@ -43,7 +43,7 @@ function UserNavbar() {
                                 <Link to="/candidatehiring" className="dropdown-item">Post Job</Link>
                                 <Link to="/support" className="dropdown-item">Support Assistance</Link>
                             </div> 
-                        </div>
+                        </div> */}
                         <div className="nav-item dropdown">
                             <Link to="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                                 <i className="fa fa-user-circle usernavbar2"></i> User

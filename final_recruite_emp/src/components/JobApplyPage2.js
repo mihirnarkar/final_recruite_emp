@@ -2,11 +2,15 @@ import React from 'react'
 import Footer from './Footer'
 import Navbar from './Navbar'
 import { Link } from 'react-router-dom'
+import Alert from './Alert'
 
 function JobApplyPage2() {
   return (
     <>
       <Navbar title="recruitEmp" />
+      <br></br>
+
+      <Alert alertType="info" alertMssg="Your response are recorded you can proceed with application"/>
 
       <div className="container-xxl p-5 m-5 wow fadeInUp" data-wow-delay="0.1s">
         <div className="container">

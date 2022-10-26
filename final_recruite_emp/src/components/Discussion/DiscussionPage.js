@@ -1,6 +1,6 @@
 import React from "react";
 import Footer from "../Footer";
-import Navbar from "../Navbar";
+import UserNavbar from "../user/UserNavbar";
 import DiscussionPageContent from "./DiscussionPageContent";
 
 
@@ -10,7 +10,7 @@ return(
 
 <>
 
-<Navbar/>
+<UserNavbar/>
 
 <DiscussionPageContent/>
 <Footer/>
