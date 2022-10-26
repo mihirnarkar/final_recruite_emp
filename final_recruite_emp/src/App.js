@@ -1,6 +1,6 @@
 import './App.css';
 import React from "react";
-import{
+import {
   BrowserRouter,
   Routes,
   Route,
@@ -37,7 +37,7 @@ import Discussion from './components/Discussion/DiscussionPage'
 import JobAttemptTest from './components/JobAttemptTest';
 import JobApplyPage2 from './components/JobApplyPage2';
 import JobApplyPage1 from './components/JobApplyPage1';
-
+import Resume_word_cloud from './components/features/Resume_word_cloud';
 
 
 
@@ -69,11 +69,11 @@ function App() {
 
   return (
     <BrowserRouter>
-    <ScrollToTop/>
+      <ScrollToTop />
 
 
 
-    {/* <div className="App">
+      {/* <div className="App">
         <header>
           <h1>React and flask</h1>
           <p>{data.name}</p>
@@ -95,46 +95,50 @@ function App() {
 </form> */}
 
       <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path='/about' element={<Aboutpage/>}/>
-        <Route path='/joblist' element={<JobListPage/>}/>
+        <Route path='/' element={<Home />} />
+        <Route path='/about' element={<Aboutpage />} />
+        <Route path='/joblist' element={<JobListPage />} />
 
         {/* Job detail page */}
-        <Route path='/jobdetail1' element={<JobDetailPage1/>}/>
-        <Route path='/jobdetail2' element={<JobDetailPage2/>}/>
-        <Route path='/jobdetail3' element={<JobDetailPage3/>}/>
-        <Route path='/jobdetail4' element={<JobDetailPage4/>}/>
-        <Route path='/jobdetail5' element={<JobDetailPage5/>}/>
+        <Route path='/jobdetail1' element={<JobDetailPage1 />} />
+        <Route path='/jobdetail2' element={<JobDetailPage2 />} />
+        <Route path='/jobdetail3' element={<JobDetailPage3 />} />
+        <Route path='/jobdetail4' element={<JobDetailPage4 />} />
+        <Route path='/jobdetail5' element={<JobDetailPage5 />} />
 
-        <Route path='/services' element={<GetJobPage/>}/>
-        <Route path='/login' element={<Login/>}/>
-        <Route path='/signup' element={<SignUp/>}/>
-        <Route path='/userhomepage' element={<Homepage/>}/>
-        <Route path='/resume' element={<Resume/>}/>
-        <Route path='/trackapp' element={<TrackApplication/>}/>
-        <Route path='/viewaccount' element={<ViewAccount/>}/>
-        <Route path='/changepassword' element={<ChangePass/>}/>
-        <Route path='/changeemail' element={<ChangeEmail/>}/>
-        <Route path='/deleteaccount' element={<DeleteAccount/>}/>
+        <Route path='/services' element={<GetJobPage />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/signup' element={<SignUp />} />
+        <Route path='/userhomepage' element={<Homepage />} />
+        <Route path='/resume' element={<Resume />} />
+        <Route path='/trackapp' element={<TrackApplication />} />
+        <Route path='/viewaccount' element={<ViewAccount />} />
+        <Route path='/changepassword' element={<ChangePass />} />
+        <Route path='/changeemail' element={<ChangeEmail />} />
+        <Route path='/deleteaccount' element={<DeleteAccount />} />
 
-        <Route path='/support' element={<Support/>}/>
-        <Route path='/AI_recommedention' element={<AI_recommedention/>}/>
+        <Route path='/support' element={<Support />} />
+        <Route path='/AI_recommedention' element={<AI_recommedention />} />
         {/* <Route path='/AI_recommedention' element={<AI_recommedention/>}/> */}
-        <Route path='/candidatehiring' element={<Candidate_Hiring/>}/>
-        <Route path='/postjob' element={<Post_Job/>}/>
+        <Route path='/candidatehiring' element={<Candidate_Hiring />} />
+        <Route path='/postjob' element={<Post_Job />} />
 
-        <Route path='/discussion' element={<Discussion/>}/>
+        <Route path='/discussion' element={<Discussion />} />
 
 
         {/* Attempt test job navigation */}
-        <Route path='/jobAttemptTest' element={<JobAttemptTest/>}/>
+        <Route path='/jobAttemptTest' element={<JobAttemptTest />} />
 
         {/* Apply Job Navigation page 1 */}
-        <Route path='/jobApplypage1' element={<JobApplyPage1/>}/>
+        <Route path='/jobApplypage1' element={<JobApplyPage1 />} />
 
         {/* Apply Job Navigation page 2 */}
-        <Route path='/jobApplypage2' element={<JobApplyPage2/>}/>
+        <Route path='/jobApplypage2' element={<JobApplyPage2 />} />
 
+
+
+         {/* Features pages adding here */}
+        <Route path='/Resume_word_cloud' element={<Resume_word_cloud />} />
 
 
 
