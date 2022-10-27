@@ -37,7 +37,7 @@ import Discussion from './components/Discussion/DiscussionPage'
 import JobAttemptTest from './components/JobAttemptTest';
 import JobApplyPage2 from './components/JobApplyPage2';
 import JobApplyPage1 from './components/JobApplyPage1';
-import Resume_word_cloud from './components/features/Resume_word_cloud';
+// import Resume_word_cloud from './components/features/Resume_word_cloud';
 
 
 
@@ -138,7 +138,7 @@ function App() {
 
 
          {/* Features pages adding here */}
-        <Route path='/Resume_word_cloud' element={<Resume_word_cloud />} />
+        {/* <Route path='/Resume_word_cloud' element={<Resume_word_cloud />} /> */}
 
 
 
