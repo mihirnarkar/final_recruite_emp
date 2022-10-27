@@ -1,5 +1,5 @@
 from unittest import result
-from flask import Flask, redirect, flash,url_for, render_template, request, redirect
+from flask import Flask, redirect, flash,url_for, render_template, request, redirect,flash
 import mysql.connector
 import resume_word_cloud
 
@@ -40,9 +40,6 @@ def get_time():
 
 @app.route('/userhomepage', methods=["POST"])
 def login():
-
-    
-
     username = request.form.get('username')
     password = request.form.get('password')
 
@@ -65,8 +62,8 @@ def login():
 
         if user_data != None:
             # redirecting to the userhomepage after successful login`
+            flash("You have been logged in")
             return redirect('http://localhost:3000/userhomepage')
-
         else:
         	return redirect('http://localhost:3000/security/signin.html') #If credentials are wrong then it will redirect to the same page
 
