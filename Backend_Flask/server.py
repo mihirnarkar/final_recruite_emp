@@ -111,21 +111,18 @@ def signin():
     return redirect('http://localhost:3000/security/signup1.html')
 
 
-@app.route('/Resume_word_cloud', methods=["POST"])
+@app.route('/features/Resume_word_cloud.html', methods=["POST"])
 def resume_word_cloud_checker():
     print("resume_word_cloud")
-    username = request.form.get('wordcloud')
-    password = request.form.get('desc')
-
-
-    print(username, password)
+    job_desc = request.form.get('wordcloud')
+    print(job_desc)
 
     result_matched = resume_word_cloud.start_word_cloud()
 
-    print(result_matched)
-    flash("You have been flashed hahaha", "info")
-
-    return test_data
+    print(result_matched) 
+    # flash("You have been flashed hahaha", "info")
+    
+    return test_data 
 
 
 
