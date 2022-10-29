@@ -1,4 +1,4 @@
-import { React, onSubmit } from 'react'
+import { React, onSubmit, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Footer from '../Footer'
 import UserNavbar from '../user/UserNavbar'
@@ -7,15 +7,46 @@ import axios from 'axios'
 
 
 function Resume_word_cloud() {
+ 
+
+    const [file, setFile] = useState()
 
 
 
+    function handleChange(event) {
+        setFile(event.target.files[0])
+        console.log(event.target.files[0])
+        console.log(event.target.files[0]['name']) //printing the file name
+
+    }
+
+
+
+    
     const onSubmit = (e) => {
         e.preventDefault();
         console.log("refresh prevented");
+        console.log(job_desc);
+        
 
 
         try {
+
+            e.preventDefault()
+            const url = 'http://127.0.0.1:5000/';
+            const formData = new FormData();
+            formData.append('file', file);
+            formData.append('fileName', file.name);
+            const config = {
+              headers: {
+                'content-type': 'multipart/form-data',
+              },
+            };
+            // console.log(formData)
+            axios.post(url, formData, config).then((response) => {
+              console.log(response.data);
+            });
+        
 
             axios({
                 method: 'post',
@@ -23,9 +54,11 @@ function Resume_word_cloud() {
                 data: {
                     firstName: 'Jatin',
                     job_desc: job_desc,
-                    resume_name:resume_name
+                    resume_name: resume_name,
+                    // formData:formData
                 }
             });
+
 
         } catch (err) {
             console.log(err);
@@ -33,8 +66,8 @@ function Resume_word_cloud() {
 
     };
 
-    let job_desc;
-    let resume_name="resume name";
+    var job_desc;
+    var resume_name = "resume name";
 
     const handleMessageChange = event => { //this will update the textarea and give me in a variable
         job_desc = event.target.value
@@ -58,7 +91,7 @@ function Resume_word_cloud() {
                                     <div className="row g-3">
                                         <div className="input-group col-12 col-sm-6">
                                             <span class="input-group-text"><b>Resume</b></span>
-                                            <input type="file" className="form-control" name='resume_name' placeholder="Current Location" />
+                                            <input type="file" className="form-control" name='resume_name' placeholder="Current Location" onChange={handleChange} />
                                         </div>
 
                                         <div className="row g-3">
