@@ -9,6 +9,7 @@ function Resume_word_cloud() {
     return (
         <>
             <UserNavbar />
+            
             {/* <h1>kjdbsf</h1>
             <form action="" method="post" >
                 <input type="text" id='word' name="wordcloud" />
