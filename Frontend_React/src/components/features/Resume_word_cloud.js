@@ -79,19 +79,6 @@ function Resume_word_cloud() {
     return (
         <>
             <UserNavbar />
-<<<<<<< HEAD
-            
-            {/* <h1>kjdbsf</h1>
-            <form action="" method="post" >
-                <input type="text" id='word' name="wordcloud" />
-                <br></br>
-                <input type="text" id='desc' name="desc" />
-                <br></br>
-                <input type='submit' value='submit' />
-            </form> */}
-
-=======
->>>>>>> f6362a1388c3e13a78398262339c6042e4c20f2a
             <div className="container-xxl p-5 m-5 wow fadeInUp" data-wow-delay="0.1s">
                 <div className="container">
                     <div className="row gy-5 gx-4">
