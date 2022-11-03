@@ -38,7 +38,24 @@ import JobAttemptTest from './components/JobAttemptTest';
 import JobApplyPage2 from './components/JobApplyPage2';
 import JobApplyPage1 from './components/JobApplyPage1';
 import Resume_word_cloud from './components/features/Resume_word_cloud';
+import Marketing from './components/categories/Marketing.js';
+import HR_Jobs from './components/categories/HR_ Jobs';
+import Computer_Science_Jobs from './components/categories/Computer_Science_Jobs';
+import Data_Science from './components/categories/Data_Science';
 
+
+
+
+
+// import Categories1 from '../categories/Categories1';
+// import Categories2 from './components/categories/categories2';
+
+
+// path='/categories1' element={<Categories1 />} />
+//         <Route path='/categories2' element={<Categories2 />} />
+//         <Route path='/categories3' element={<Categories3 />} />
+//         <Route path='/categories4' element={<Categories4 />} />
+//         <Route path='/categories5' element={<Categories5 />} />       
 
 
 function App() {
@@ -112,6 +129,7 @@ function App() {
         <Route path='/userhomepage' element={<Homepage />} />
         <Route path='/resume' element={<Resume />} />
         <Route path='/trackapp' element={<TrackApplication />} />
+        <Route path='/trackapp' element={<TrackApplication />} />
         <Route path='/viewaccount' element={<ViewAccount />} />
         <Route path='/changepassword' element={<ChangePass />} />
         <Route path='/changeemail' element={<ChangeEmail />} />
@@ -137,16 +155,20 @@ function App() {
 
 
 
-         {/* Features pages adding here */}
+        {/* Features pages adding here */}
         <Route path='/Resume_word_cloud' element={<Resume_word_cloud />} />
 
+        {/* Job_categories */}
 
+        <Route path='/marketing' element={<Marketing />} />
+        <Route path='/hr_jobs' element={<HR_Jobs />} />
+        <Route path='/computer_science_jobs' element={<Computer_Science_Jobs />} />
+        <Route path='/data_science' element={<Data_Science />} />
 
       </Routes>
     </BrowserRouter>
   );
 }
-
 
 
 export default App;
