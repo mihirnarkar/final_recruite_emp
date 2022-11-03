@@ -44,7 +44,7 @@ function Navbar(props) {
                             </div>
                         </div>
 
-                        <a href=" http://localhost:3001" target="_blank" className="nav-item nav-link">Course</a>
+                        <a href=" http://localhost:3002" target="_blank" className="nav-item nav-link">Course</a>
 
 
                         <div className="nav-item dropdown">
@@ -59,7 +59,7 @@ function Navbar(props) {
                         <a href="/security/signin.html" className="nav-item nav-link">Log In</a>
 
                     </div>
-                    <a href="/security/signup1.html" className="btn btn-secondary rounded-0 py-4 px-lg-5 d-none d-lg-block">Gets
+                    <a href="/security_recruit/signup.html" className="btn btn-secondary rounded-0 py-4 px-lg-5 d-none d-lg-block">Gets
                         started<i className="fa fa-arrow-right ms-3"></i></a>
                 </div>
             </nav>
