@@ -1,11 +1,33 @@
 import React from 'react'
+import axios from 'axios';
 
 function GetJobContent() {
+
+    const onSubmit = (e) => {
+        e.preventDefault()
+        console.log("came here")
+    
+        axios({
+          method: 'get',
+          url: '/services',
+          data: {
+            
+          }
+        }).then((response) => {
+          console.log(response.data);
+    
+          // console.log(xtype([applydate]))
+        });
+      };
+    
+
+
+
     return (
         <>
             <div className="wow fadeInUp getjobcontent" data-wow-delay="0.1s">
 
-                <form enctype="multipart/form-data" method="POST" action="">
+                <form enctype="multipart/form-data" method="GET" onSubmit={onSubmit}>
                     <div className="row g-3">
                         <div className="col-md-6">
                             <div className="form-floating">
@@ -62,7 +84,7 @@ function GetJobContent() {
 
 
                     <div className="col-12 getjobcontent_apply">
-                        <button className="btn btn-secondary w-100 py-3" type="submit" name="button" value="Submit">Apply
+                        <button className="btn btn-secondary w-100 py-3" type="submit" name="button" value="Submit" >Apply
                             Now</button>
                     </div>
 

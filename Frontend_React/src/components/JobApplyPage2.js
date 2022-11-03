@@ -104,7 +104,7 @@ function JobApplyPage2() {
                       {/* <button className="btn btn-secondary w-100" type="submit">Apply Now</button> */}
                       {/* <Link className="btn btn-secondary trackAppButton" to="/trackapp">Submit</Link>*/}
 
-                      <input type='submit' name='submit'></input>
+                      <input className="btn btn-secondary" type='submit' name='submit'></input>
                     </div>
                     </div>
                   </div>

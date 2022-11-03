@@ -1,5 +1,5 @@
 import './App.css';
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   BrowserRouter,
   Routes,
@@ -43,28 +43,28 @@ import Resume_word_cloud from './components/features/Resume_word_cloud';
 
 function App() {
 
-  // const [data, setdata] = useState({
-  //   name: "",
-  //   age: 0,
-  //   date: "",
-  //   programming: "",
-  // });
+  const [data, setdata] = useState({
+    name: "",
+    age: 0,
+    date: "",
+    programming: "",
+  });
 
-  // useEffect(() => {
-  //   // Using fetch to fetch the api from 
-  //   // flask server it will be redirected to proxy
-  //   fetch("/data").then((res) =>
-  //     res.json().then((data) => {
-  //       // Setting a data from api
-  //       setdata({
-  //         name: data.Name,
-  //         age: data.Age,
-  //         date: data.Date,
-  //         programming: data.programming,
-  //       });
-  //     })
-  //   );
-  // }, []);
+  useEffect(() => {
+    // Using fetch to fetch the api from 
+    // flask server it will be redirected to proxy
+    fetch("/data").then((res) =>
+      res.json().then((data) => {
+        // Setting a data from api
+        setdata({
+          name: data.Name,
+          age: data.Age,
+          date: data.Date,
+          programming: data.programming,
+        });
+      })
+    );
+  }, []);
 
 
   return (
