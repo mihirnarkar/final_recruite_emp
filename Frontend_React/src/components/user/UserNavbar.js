@@ -33,7 +33,7 @@ function UserNavbar() {
                             </div>
                         </div>
 
-                        <Link to="/" className="nav-item nav-link">Course</Link>
+                        <a href=" http://localhost:3002" target="_blank" className="nav-item nav-link">Course</a>
                         <Link to="/discussion" className="nav-item nav-link">FAQ</Link>
 
                         {/* <div className="nav-item dropdown">
@@ -50,7 +50,7 @@ function UserNavbar() {
                                 <i className="fa fa-user-circle usernavbar2"></i> User
                             </Link>
                             <div className="dropdown-menu rounded-0 m-0">
-                                <Link to="/resume" className="dropdown-item">Your Resume</Link>
+                                {/* <Link href="http://localhost:3001" className="dropdown-item">Your Resume</Link> */}
                                 <Link to="/trackapp" className="dropdown-item">Track application</Link>
 
                                 <div>
