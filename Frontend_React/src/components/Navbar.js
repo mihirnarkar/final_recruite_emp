@@ -27,11 +27,11 @@ function Navbar(props) {
                             <div className="dropdown-menu rounded-0 m-0">
                                 <Link to="/joblist" className="dropdown-item">Job List</Link>
                                 <Link to="/jobdetail" className="dropdown-item">Job Detail</Link>
-                                <Link to="/categories1" className='dropdown-item'>Development</Link>
-                                <Link to="/categories2" className='dropdown-item'>Marketing</Link>
-                                <Link to="/categories3" className='dropdown-item'>Designing</Link>
-                                <Link to="/categories4" className='dropdown-item'>Creativity</Link>
-                                <Link to="/categories5" className='dropdown-item'>Content-Writer</Link>
+                                <Link to="/marketing" className='dropdown-item'>Marketing</Link>
+                                <Link to="/hr_jobs" className='dropdown-item'>HR Jobs</Link>
+                                <Link to="/computer_science_jobs" className='dropdown-item'>Computer Science Jobs</Link>
+                                <Link to="/data_science" className='dropdown-item'>Data Science Jobs</Link>
+                                
                                 
                             </div>
                         </div>
@@ -69,4 +69,4 @@ function Navbar(props) {
     )
 }
 
-export default Navbar
+export default Navbar 

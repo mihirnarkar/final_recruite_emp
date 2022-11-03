@@ -2,14 +2,14 @@ import React from 'react'
 import UserNavbar from '../user/UserNavbar'
 
 
-function Categories4() {
+function Data_Science() {
   return (
     
      <>
       <UserNavbar/>
      
       {/* categories starts here */}
-      <h1><center>Finance</center></h1>
+      <h1><center>Data Science</center></h1>
 
       <div id="tab-1" class="tab-pane fade show p-0 active">
         <div class="job-item p-4 mb-4">
@@ -18,8 +18,8 @@ function Categories4() {
               <img class="flex-shrink-0 img-fluid border rounded c1" src="img/com-logo-1.jpg"
                 alt=""  />
               <div class="text-start ps-4">
-                <p><h5 class="mb-3">Junior Accountant</h5>
-                        <p class = "mb-6">Altois Digital</p>
+                <p><h5 class="mb-3">Business Analyst</h5>
+                        <p class = "mb-6">Dough One Sources Limited</p>
                 </p>
 
                 <span class="text-truncate me-3"><i
@@ -29,7 +29,7 @@ function Categories4() {
                   <i class="far fa-clock text-secondary me-2"></i>Full Time</span>
                 <span class="text-truncate me-0"><i
                   class="far fa-money-bill-alt text-secondary me-2"></i>2 -
-                  2.5 LPA</span>
+                  4 LPA</span>
               </div>
             </div>
             <div
@@ -46,6 +46,7 @@ function Categories4() {
           </div>
         </div>
       </div>
+
       {/* job2 starts here */}
       <div id="tab-1" class="tab-pane fade show p-0 active">
         <div class="job-item p-4 mb-4">
@@ -54,12 +55,12 @@ function Categories4() {
               <img class="flex-shrink-0 img-fluid border rounded c1" src="img/com-logo-1.jpg"
                 alt=""  />
               <div class="text-start ps-4">
-                <p><h5 class="mb-3">Admin & Accounts Manager</h5>
-                        <p class = "mb-6">Bluesparrow Events</p>
+                <p><h5 class="mb-3">PPC Manager </h5>
+                        <p class = "mb-6">Stirring Minds</p>
                 </p>
 
                 <span class="text-truncate me-3"><i
-                  class="fa fa-map-marker-alt text-secondary me-2"></i>Mumbai
+                  class="fa fa-map-marker-alt text-secondary me-2"></i>Delhi
                   ,India</span>
                 <span class="text-truncate me-3">
                   <i class="far fa-clock text-secondary me-2"></i>Full Time</span>
@@ -77,7 +78,7 @@ function Categories4() {
               </div>
               <small class="text-truncate">
 
-                <i class="far fa-calendar-alt text-secondary me-2"></i> Date Line: 10 October, 2022</small>
+                <i class="far fa-calendar-alt text-secondary me-2"></i> Date Line: Immediately</small>
             </div>
           </div>
         </div>
@@ -92,18 +93,18 @@ function Categories4() {
               <img class="flex-shrink-0 img-fluid border rounded c1" src="img/com-logo-1.jpg"
                 alt=""  />
               <div class="text-start ps-4">
-                <p><h5 class="mb-3">Junior Finance Executive</h5>
-                        <p class = "mb-6">Grinntech Motors & Service Limited</p>
+                <p><h5 class="mb-3">MIS Executive</h5>
+                        <p class = "mb-6">Adastacks Media</p>
                 </p>
 
                 <span class="text-truncate me-3"><i
-                  class="fa fa-map-marker-alt text-secondary me-2"></i>Chennai
+                  class="fa fa-map-marker-alt text-secondary me-2"></i>Gurgaon
                   ,India</span>
                 <span class="text-truncate me-3">
                   <i class="far fa-clock text-secondary me-2"></i>Full Time</span>
                 <span class="text-truncate me-0"><i
-                  class="far fa-money-bill-alt text-secondary me-2"></i>2 -
-                  2.7 LPA</span>
+                  class="far fa-money-bill-alt text-secondary me-2"></i>3 -
+                  3.1 LPA</span>
               </div>
             </div>
             <div
@@ -130,18 +131,18 @@ function Categories4() {
               <img class="flex-shrink-0 img-fluid border rounded c1" src="img/com-logo-1.jpg"
                 alt=""  />
               <div class="text-start ps-4">
-                <p><h5 class="mb-3">Finance Executive</h5>
-                        <p class = "mb-6">UniAcco</p>
+                <p><h5 class="mb-3">Web Scrapper (Python Data Engineer)</h5>
+                        <p class = "mb-6">Taiyo</p>
                 </p>
 
                 <span class="text-truncate me-3"><i
-                  class="fa fa-map-marker-alt text-secondary me-2"></i>Mumbai
-                  ,India</span>
+                  class="fa fa-map-marker-alt text-secondary me-2"></i>Work From
+                  Home</span>
                 <span class="text-truncate me-3">
                   <i class="far fa-clock text-secondary me-2"></i>Full Time</span>
                 <span class="text-truncate me-0"><i
-                  class="far fa-money-bill-alt text-secondary me-2"></i>2 -
-                  2.5 LPA</span>
+                  class="far fa-money-bill-alt text-secondary me-2"></i>7 -
+                  10 LPA</span>
               </div>
             </div>
             <div
@@ -168,8 +169,8 @@ function Categories4() {
               <img class="flex-shrink-0 img-fluid border rounded c1" src="img/com-logo-1.jpg"
                 alt=""  />
               <div class="text-start ps-4">
-                <p><h5 class="mb-3">Account Manager</h5>
-                        <p class = "mb-6">Haleema Enterprises</p>
+                <p><h5 class="mb-3">Business Analyst</h5>
+                        <p class = "mb-6">Drona Pay Private Limited</p>
                 </p>
 
                 <span class="text-truncate me-3"><i
@@ -178,8 +179,8 @@ function Categories4() {
                 <span class="text-truncate me-3">
                   <i class="far fa-clock text-secondary me-2"></i>Full Time</span>
                 <span class="text-truncate me-0"><i
-                  class="far fa-money-bill-alt text-secondary me-2"></i>3 -
-                  3.5 LPA</span>
+                  class="far fa-money-bill-alt text-secondary me-2"></i>4 -
+                  5 LPA</span>
               </div>
             </div>
             <div
@@ -203,4 +204,4 @@ function Categories4() {
       )
 }
 
-export default Categories4
+export default Data_Science
