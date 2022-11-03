@@ -1,15 +1,45 @@
-import React from 'react'
+import { React, onSubmit } from 'react'
 import Alert from '../Alert'
 import Footer from '../Footer'
 import UserNavbar from './UserNavbar'
+import axios from 'axios'
 
 function TrackApplication() {
+
+  const onSubmit = (e) => {
+    e.preventDefault()
+    console.log("came here")
+    
+    
+  axios({
+    method: 'post',
+    url: '/trackapp',
+    data: {
+      id: 1,
+    }
+  }).then((response) => {
+    console.log(response.data); });
+
+  };
+
+
+
+
+
   return (
     <>
       <div class="container-xxl bg-white p-0">
 
         <UserNavbar />
         <br></br>
+
+        <form onSubmit={onSubmit}>
+
+          <input type="submit" value="submit"></input>
+
+        </form>
+
+
         <Alert alertType="success" alertStatus="Success" alertMssg="Your application has been submitted sucessfully" />
         {/* Container starts here */}
         <div className="container-md w-100 mt-5 wow zoomIn">

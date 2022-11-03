@@ -9,7 +9,7 @@ function Categories4() {
       <UserNavbar/>
      
       {/* categories starts here */}
-      <h1><center>Creative Director</center></h1>
+      <h1><center>Finance</center></h1>
 
       <div id="tab-1" class="tab-pane fade show p-0 active">
         <div class="job-item p-4 mb-4">
@@ -18,18 +18,18 @@ function Categories4() {
               <img class="flex-shrink-0 img-fluid border rounded c1" src="img/com-logo-1.jpg"
                 alt=""  />
               <div class="text-start ps-4">
-                <p><h5 class="mb-3">Sales Engineer(Inside Sales)</h5>
-                        <p class = "mb-6">Skill Lync</p>
+                <p><h5 class="mb-3">Junior Accountant</h5>
+                        <p class = "mb-6">Altois Digital</p>
                 </p>
 
                 <span class="text-truncate me-3"><i
-                  class="fa fa-map-marker-alt text-secondary me-2"></i>Hyderabad
+                  class="fa fa-map-marker-alt text-secondary me-2"></i>Mumbai
                   ,India</span>
                 <span class="text-truncate me-3">
                   <i class="far fa-clock text-secondary me-2"></i>Full Time</span>
                 <span class="text-truncate me-0"><i
-                  class="far fa-money-bill-alt text-secondary me-2"></i>40k -
-                  60k</span>
+                  class="far fa-money-bill-alt text-secondary me-2"></i>2 -
+                  2.5 LPA</span>
               </div>
             </div>
             <div
@@ -41,7 +41,7 @@ function Categories4() {
               </div>
               <small class="text-truncate">
 
-                <i class="far fa-calendar-alt text-secondary me-2"></i> Date Line: 01 October, 2022</small>
+                <i class="far fa-calendar-alt text-secondary me-2"></i> Date Line: 30 October, 2022</small>
             </div>
           </div>
         </div>
@@ -54,8 +54,8 @@ function Categories4() {
               <img class="flex-shrink-0 img-fluid border rounded c1" src="img/com-logo-1.jpg"
                 alt=""  />
               <div class="text-start ps-4">
-                <p><h5 class="mb-3">Inside Sales Executive</h5>
-                        <p class = "mb-6">Refier</p>
+                <p><h5 class="mb-3">Admin & Accounts Manager</h5>
+                        <p class = "mb-6">Bluesparrow Events</p>
                 </p>
 
                 <span class="text-truncate me-3"><i
@@ -64,8 +64,8 @@ function Categories4() {
                 <span class="text-truncate me-3">
                   <i class="far fa-clock text-secondary me-2"></i>Full Time</span>
                 <span class="text-truncate me-0"><i
-                  class="far fa-money-bill-alt text-secondary me-2"></i>4 -
-                  6 LPA</span>
+                  class="far fa-money-bill-alt text-secondary me-2"></i>3 -
+                  3.5 LPA</span>
               </div>
             </div>
             <div
@@ -92,18 +92,18 @@ function Categories4() {
               <img class="flex-shrink-0 img-fluid border rounded c1" src="img/com-logo-1.jpg"
                 alt=""  />
               <div class="text-start ps-4">
-                <p><h5 class="mb-3">Sales Engineer(Inside Sales)</h5>
-                        <p class = "mb-6">Skill Lync</p>
+                <p><h5 class="mb-3">Junior Finance Executive</h5>
+                        <p class = "mb-6">Grinntech Motors & Service Limited</p>
                 </p>
 
                 <span class="text-truncate me-3"><i
-                  class="fa fa-map-marker-alt text-secondary me-2"></i>Hyderabad
+                  class="fa fa-map-marker-alt text-secondary me-2"></i>Chennai
                   ,India</span>
                 <span class="text-truncate me-3">
                   <i class="far fa-clock text-secondary me-2"></i>Full Time</span>
                 <span class="text-truncate me-0"><i
-                  class="far fa-money-bill-alt text-secondary me-2"></i>40k -
-                  60k</span>
+                  class="far fa-money-bill-alt text-secondary me-2"></i>2 -
+                  2.7 LPA</span>
               </div>
             </div>
             <div
@@ -115,7 +115,7 @@ function Categories4() {
               </div>
               <small class="text-truncate">
 
-                <i class="far fa-calendar-alt text-secondary me-2"></i> Date Line: 01 October, 2022</small>
+                <i class="far fa-calendar-alt text-secondary me-2"></i> Date Line: 02 November, 2022</small>
             </div>
           </div>
         </div>
@@ -130,18 +130,18 @@ function Categories4() {
               <img class="flex-shrink-0 img-fluid border rounded c1" src="img/com-logo-1.jpg"
                 alt=""  />
               <div class="text-start ps-4">
-                <p><h5 class="mb-3">Sales Engineer(Inside Sales)</h5>
-                        <p class = "mb-6">Skill Lync</p>
+                <p><h5 class="mb-3">Finance Executive</h5>
+                        <p class = "mb-6">UniAcco</p>
                 </p>
 
                 <span class="text-truncate me-3"><i
-                  class="fa fa-map-marker-alt text-secondary me-2"></i>Hyderabad
+                  class="fa fa-map-marker-alt text-secondary me-2"></i>Mumbai
                   ,India</span>
                 <span class="text-truncate me-3">
                   <i class="far fa-clock text-secondary me-2"></i>Full Time</span>
                 <span class="text-truncate me-0"><i
-                  class="far fa-money-bill-alt text-secondary me-2"></i>40k -
-                  60k</span>
+                  class="far fa-money-bill-alt text-secondary me-2"></i>2 -
+                  2.5 LPA</span>
               </div>
             </div>
             <div
@@ -153,7 +153,7 @@ function Categories4() {
               </div>
               <small class="text-truncate">
 
-                <i class="far fa-calendar-alt text-secondary me-2"></i> Date Line: 01 October, 2022</small>
+                <i class="far fa-calendar-alt text-secondary me-2"></i> Date Line: 19 October, 2022</small>
             </div>
           </div>
         </div>
@@ -168,8 +168,8 @@ function Categories4() {
               <img class="flex-shrink-0 img-fluid border rounded c1" src="img/com-logo-1.jpg"
                 alt=""  />
               <div class="text-start ps-4">
-                <p><h5 class="mb-3">Sales Engineer(Inside Sales)</h5>
-                        <p class = "mb-6">Skill Lync</p>
+                <p><h5 class="mb-3">Account Manager</h5>
+                        <p class = "mb-6">Haleema Enterprises</p>
                 </p>
 
                 <span class="text-truncate me-3"><i
@@ -178,8 +178,8 @@ function Categories4() {
                 <span class="text-truncate me-3">
                   <i class="far fa-clock text-secondary me-2"></i>Full Time</span>
                 <span class="text-truncate me-0"><i
-                  class="far fa-money-bill-alt text-secondary me-2"></i>40k -
-                  60k</span>
+                  class="far fa-money-bill-alt text-secondary me-2"></i>3 -
+                  3.5 LPA</span>
               </div>
             </div>
             <div
@@ -191,7 +191,7 @@ function Categories4() {
               </div>
               <small class="text-truncate">
 
-                <i class="far fa-calendar-alt text-secondary me-2"></i> Date Line: 01 October, 2022</small>
+                <i class="far fa-calendar-alt text-secondary me-2"></i> Date Line: 25 October, 2022</small>
             </div>
           </div>
         </div>
