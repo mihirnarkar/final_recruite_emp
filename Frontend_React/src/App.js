@@ -42,6 +42,7 @@ import Marketing from './components/categories/Marketing.js';
 import HR_Jobs from './components/categories/HR_ Jobs';
 import Computer_Science_Jobs from './components/categories/Computer_Science_Jobs';
 import Data_Science from './components/categories/Data_Science';
+import AdminHomePage from './components/admin/AdminHomePage';
 
 
 
@@ -164,6 +165,10 @@ function App() {
         <Route path='/hr_jobs' element={<HR_Jobs />} />
         <Route path='/computer_science_jobs' element={<Computer_Science_Jobs />} />
         <Route path='/data_science' element={<Data_Science />} />
+
+
+        {/* Admin dashboard */}
+        <Route path='/adminhomepage' element={<AdminHomePage/>} />
 
       </Routes>
     </BrowserRouter>

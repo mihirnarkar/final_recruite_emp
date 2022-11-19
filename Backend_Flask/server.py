@@ -148,6 +148,40 @@ def admin_signup():
     return redirect('http://localhost:3000/security/AdminSignup.html')
 
 
+# Admin signin process
+@app.route('/adminhomepage', methods=["POST"])
+def admin_login():
+    username = request.form.get('username')
+    companyname = request.form.get('companyname')
+    password = request.form.get('password')
+
+    if(username != '' and password != '' and companyname != ''):
+
+        print("login function")
+        print(request.form.get('username'))
+        print(request.form.get('companyname'))
+        print(request.form.get('password'))
+
+        mydb = mysql.connector.connect(
+            host='sql787.main-hosting.eu', database='u844323284_Recruitemp', user='u844323284_project', password='Recruitemp@1234')
+        sql_query = f"SELECT * FROM `admin` WHERE `username`='{username}' AND `company_name`='{companyname}' AND `password`='{password}'"
+        print(sql_query)
+        cursor = mydb.cursor()
+
+        cursor.execute(sql_query)
+        user_data = cursor.fetchone()
+        print(user_data)
+        mydb.close()  # closing the connection
+
+        if user_data != None:
+            # redirecting to the userhomepage after successful login`
+            flash("You have been logged in")
+            return redirect('http://localhost:3000/adminhomepage')
+        else:
+            # If credentials are wrong then it will redirect to the same page
+            return redirect('http://localhost:3000/security/AdminSignin.html')
+
+
 
 @app.route('/Resume_word_cloud', methods=["POST"])
 def resume_word_cloud_checker():
