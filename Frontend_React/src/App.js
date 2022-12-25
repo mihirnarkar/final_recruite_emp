@@ -43,6 +43,11 @@ import HR_Jobs from './components/categories/HR_ Jobs';
 import Computer_Science_Jobs from './components/categories/Computer_Science_Jobs';
 import Data_Science from './components/categories/Data_Science';
 import AdminHomePage from './components/admin/AdminHomePage';
+import TrackApplicants from './components/admin/TrackApplicants';
+import AdminViewAccount from './components/admin/AdminViewAccount';
+import AdminChangePass from './components/admin/AdminChangePass';
+import AdminChangeEmail from './components/admin/AdminChangeEmail';
+import AdminDeleteAccount from './components/admin/AdminDeleteAccount';
 
 
 
@@ -169,6 +174,11 @@ function App() {
 
         {/* Admin dashboard */}
         <Route path='/adminhomepage' element={<AdminHomePage/>} />
+        <Route path='/trackapplicants' element={<TrackApplicants/>}/>
+        <Route path='/adminviewaccount' element={<AdminViewAccount/>}/>
+        <Route path='/adminchangepassword' element={<AdminChangePass/>}/>
+        <Route path='/adminchangeemail' element={<AdminChangeEmail/>}/>
+        <Route path='/admindeleteaccount' element={<AdminDeleteAccount/>}/>
 
       </Routes>
     </BrowserRouter>

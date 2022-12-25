@@ -33,7 +33,7 @@ function AdminNavbar() {
                         </div> */}
 
                         {/* <a href=" http://localhost:3002" target="_blank" className="nav-item nav-link">Course</a> */}
-                        <Link to="/discussion" className="nav-item nav-link">FAQ</Link>
+                        {/* <Link to="/discussion" className="nav-item nav-link">FAQ</Link> */}
 
                         {/* <div className="nav-item dropdown">
                             <Link to="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Products</Link>
@@ -50,7 +50,7 @@ function AdminNavbar() {
                             </Link>
                             <div className="dropdown-menu rounded-0 m-0">
                                 {/* <Link href="http://localhost:3001" className="dropdown-item">Your Resume</Link> */}
-                                <Link to="/trackapp" className="dropdown-item">Track application</Link>
+                                <Link to="/trackapplicants" className="dropdown-item">Applicants</Link>
 
                                 <div>
                                     <Link className="nav-link dropdown-toggle" to="account.html" id="navbarDropdown"
@@ -69,16 +69,16 @@ function AdminNavbar() {
                                     </Link>
                                 </div>
 
-                                <Link className="dropdown-item" to="/viewaccount">View account</Link>
-                                <Link className="dropdown-item" to="/changePassword">Change password</Link>
-                                <Link className="dropdown-item" to="/changeemail">Change email</Link>
-                                <Link className="dropdown-item" to="/deleteaccount">Delete account</Link>
+                                <Link className="dropdown-item" to="/adminviewaccount">View account</Link>
+                                <Link className="dropdown-item" to="/adminchangepassword">Change password</Link>
+                                <Link className="dropdown-item" to="/adminchangeemail">Change email</Link>
+                                <Link className="dropdown-item" to="/admindeleteaccount">Delete account</Link>
                             </div>
                         </div>
                     </div>
 
                     <a href="http://localhost:3001/" target="_blank" 
-                        className="btn btn-secondary rounded-0 py-4 px-lg-3 d-none d-lg-block">Resume<i
+                        className="btn btn-secondary rounded-0 py-4 px-lg-3 d-none d-lg-block">Explore<i
                             className="fa fa-arrow-right ms-3"></i></a>
 
                 </div>
