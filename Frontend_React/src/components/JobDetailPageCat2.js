@@ -9,7 +9,7 @@ function JobDetailPageCat2() {
   return (
     <>
     <div class="container-xxl bg-white p-0">
-    <Navbar title="RecruiteEmp"/>
+    <Navbar title="RecruitEmp"/>
     <JobDetailHeader/>
     <JobDetailContent 
 

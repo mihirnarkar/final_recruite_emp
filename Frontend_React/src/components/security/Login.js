@@ -43,7 +43,7 @@ function Login() {
                                     <Link className="btn btn-primary btn-lg btn-block" to="/userhomepage">Login</Link>
 
                                     <br /><br/><br/>
-                                    <center>Not Registered on RecruiteEMP yet ?</center>
+                                    <center>Not Registered on RecruitEmp yet ?</center>
                                     <br />
                                     <center> <Link to="/signup">Create your account</Link></center>
                                 </form>
@@ -53,7 +53,7 @@ function Login() {
                     </div>
 
                     <footer className="my-5 pt-5 text-muted text-center text-small">
-                        <p className="mb-1">&copy; 2020-2021 <Link to="/" className="login1">RecruiteEMP</Link></p>
+                        <p className="mb-1">&copy; 2020-2021 <Link to="/" className="login1">RecruitEmp</Link></p>
                         <ul className="list-inline">
                             <li className="list-inline-item"><Link to="#">Privacy</Link></li>
                             <li className="list-inline-item"><Link to="#">Terms</Link></li>

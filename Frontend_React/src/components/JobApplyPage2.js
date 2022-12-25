@@ -7,7 +7,7 @@ import Alert from './Alert'
 function JobApplyPage2() {
   return (
     <>
-      <Navbar title="recruitEmp" />
+      <Navbar title="RecruitEmp" />
       <br></br>
 
       <Alert alertType="info" alertMssg="Your response are recorded you can proceed with application"/>

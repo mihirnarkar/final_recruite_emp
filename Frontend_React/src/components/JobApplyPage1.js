@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 function JobApplyPage1() {
   return (
     <>
-    <Navbar title="recruitEmp"/>
+    <Navbar title="RecruitEmp"/>
     {/* <h1>This is Job apply page 1</h1>
     <br/>
     <Link className="btn btn-primary" to="/jobAttemptTest">Attempt Test</Link>

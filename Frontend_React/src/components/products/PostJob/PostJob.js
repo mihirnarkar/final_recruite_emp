@@ -13,7 +13,7 @@ return(
             </center>
             <center>
                 <p>When it comes to recruitment, its no secret that finding the perfect
-                    match for the position or candidate at hand can take days if not weeks of work. recruiteEMP
+                    match for the position or candidate at hand can take days if not weeks of work. RecruitEmp
                     simplifies this process with its AI-powered recommendation engine. This feature recommends the most
                     suitable jobs for your candidates and the most suitable candidates for your jobs within seconds.</p>
             </center>
@@ -30,7 +30,7 @@ return(
                     <div className="col-md p-7 wow zoomIn">
                         <h1 ><b>Pinpoint the most suitable candidates</b></h1>
                         <br/>
-                        <p > recruiteEMP scans job descriptions and extracts the core skills
+                        <p > RecruitEmp scans job descriptions and extracts the core skills
                             and requirements needed for candidates. Results are cross-referenced with your talent pool
                             to identify candidates who fit the position best.</p>
                         <h3> <i className='far fa-calendar-check' ></i> Scanning and parsing of
@@ -99,11 +99,11 @@ return(
                     <div className="col-md p-7 wow zoomIn">
                         <h1 ><b>Identify the best talents for a given job</b></h1>
                         <br/>
-                        <p > recruiteEMP AI Engine compares candidates skills, location,
+                        <p > RecruitEmp AI Engine compares candidates skills, location,
                             positions, education, and more, to the requirements of any given job and ranks candidates
                             based on the criteria you select.</p>
                         <h3> <i className='far fa-calendar-check' ></i> Candidates scoring via
-                            recruiteEMP proprietary AI Engine </h3>
+                            RecruitEmp proprietary AI Engine </h3>
                         <p >based on job requirements.</p>
                         <br/>
                         <h3> <i className='far fa-calendar-check' ></i> Multiple criteria take into
@@ -140,7 +140,7 @@ return(
                         <br/>
                         <h3> <i className='far fa-calendar-check' ></i> Scored results</h3>
                         <p >established based on a multiple datapoints evaluated by
-                            recruiteEMP AI Engine.</p>
+                            RecruitEmp AI Engine.</p>
                         <br/>
                         <h5><a to="/index.html" >Learn More <i className="bi bi-arrow-right"></i></a>
                         </h5>
