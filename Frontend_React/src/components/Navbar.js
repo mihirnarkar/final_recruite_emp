@@ -26,7 +26,7 @@ function Navbar(props) {
                             <Link to="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Jobs</Link>
                             <div className="dropdown-menu rounded-0 m-0">
                                 <Link to="/joblist" className="dropdown-item">Job List</Link>
-                                <Link to="/jobdetail" className="dropdown-item">Job Detail</Link>
+                                <Link to="/jobdetail1" className="dropdown-item">Job Detail</Link>
                                 <Link to="/marketing" className='dropdown-item'>Marketing</Link>
                                 <Link to="/hr_jobs" className='dropdown-item'>HR Jobs</Link>
                                 <Link to="/computer_science_jobs" className='dropdown-item'>Computer Science Jobs</Link>

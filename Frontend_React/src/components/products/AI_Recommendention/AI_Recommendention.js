@@ -9,7 +9,7 @@ function AI_recommedention() {
 return (
 
 <>
-<Navbar/>
+<Navbar title="RecruitEmp"/>
 
 <Recommedention_content/>
 

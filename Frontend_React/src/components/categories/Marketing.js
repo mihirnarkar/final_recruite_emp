@@ -1,4 +1,5 @@
 import React from 'react'
+import Navbar from '../Navbar'
 
 import UserNavbar from '../user/UserNavbar'
 
@@ -6,7 +7,8 @@ function Marketing() {
   return (
     
      <>
-      <UserNavbar/>
+      {/* <UserNavbar/> */}
+      <Navbar/>
       
 
       {/* categories starts here */}

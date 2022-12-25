@@ -11,7 +11,7 @@ function candidatehiring() {
 return(
 
 <>
-<Navbar/>
+<Navbar title="RecruitEmp"/>
 
 <Candidate_Hiring/>
     <Footer/>
