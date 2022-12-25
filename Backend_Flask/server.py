@@ -113,6 +113,76 @@ def signin():
     return redirect('http://localhost:3000/security/signup1.html')
 
 
+# Admin signup process
+@app.route('/security/adminsignup.html', methods=["POST"])
+def admin_signup():
+
+    try:
+
+        username = request.form.get('username')
+        companyname = request.form.get('companyname')
+        companydomain = request.form.get('companydomain')
+        password = request.form.get('password')
+        cnf_password = request.form.get('cnf_password')
+
+        if (request.form.get('username') != '' and request.form.get('companyname') != '' and request.form.get('companydomain') != '' and  request.form.get('password') != '' and request.form.get('password') and request.form.get('password') == request.form.get('cnf_password')):
+
+            mydb = mysql.connector.connect(host='sql787.main-hosting.eu',
+                                           database='u844323284_Recruitemp',
+                                           user='u844323284_project',
+                                           password='Recruitemp@1234')
+            print("sign in function")
+            print(mydb)
+            sql_query = f"INSERT INTO `admin` (`username`, `company_name`, `company_domain`, `password`, `confirm_password`) VALUES ('{username}','{companyname}','{companydomain}','{password}', '{cnf_password}')"
+            print(sql_query)
+            cursor = mydb.cursor()
+            cursor.execute(sql_query)
+            mydb.commit()  # saving the data
+            mydb.close()  # closing the connection
+
+            return redirect('http://localhost:3000/security/AdminSignin.html')
+
+    except Exception as e:
+        print(e)
+        # If user registration is not okay then it will be go to the same page
+    return redirect('http://localhost:3000/security/AdminSignup.html')
+
+
+# Admin signin process
+@app.route('/adminhomepage', methods=["POST"])
+def admin_login():
+    username = request.form.get('username')
+    companyname = request.form.get('companyname')
+    password = request.form.get('password')
+
+    if(username != '' and password != '' and companyname != ''):
+
+        print("login function")
+        print(request.form.get('username'))
+        print(request.form.get('companyname'))
+        print(request.form.get('password'))
+
+        mydb = mysql.connector.connect(
+            host='sql787.main-hosting.eu', database='u844323284_Recruitemp', user='u844323284_project', password='Recruitemp@1234')
+        sql_query = f"SELECT * FROM `admin` WHERE `username`='{username}' AND `company_name`='{companyname}' AND `password`='{password}'"
+        print(sql_query)
+        cursor = mydb.cursor()
+
+        cursor.execute(sql_query)
+        user_data = cursor.fetchone()
+        print(user_data)
+        mydb.close()  # closing the connection
+
+        if user_data != None:
+            # redirecting to the userhomepage after successful login`
+            flash("You have been logged in")
+            return redirect('http://localhost:3000/adminhomepage')
+        else:
+            # If credentials are wrong then it will redirect to the same page
+            return redirect('http://localhost:3000/security/AdminSignin.html')
+
+
+
 @app.route('/Resume_word_cloud', methods=["POST"])
 def resume_word_cloud_checker():
     # print("resume_word_cloud")

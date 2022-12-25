@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Animated Login Form</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="box mt-2">
+		<form action="/security/adminsignup.html" method="post">
+			<h2>Create your admin account</h2>
+			<div class="inputBox">
+				<input type="text" required="required" name="username">
+				<span>Username</span>
+				<i></i>
+			</div>
+			<div class="inputBox">
+				<input type="text" required="required" name="companyname">
+				<span>Company Name</span>
+				<i></i>
+			</div>
+            <div class="inputBox">
+				<input type="text" required="required" name="companydomain">
+				<span>Company Domain</span>
+				<i></i>
+			</div>
+			<div class="inputBox">
+				<input type="password" required="required" name="password">
+				<span>Password</span>
+				<i></i>
+			</div>
+			<div class="inputBox">
+				<input type="password" required="required" name="cnf_password">
+				<span>Confirm Password</span>
+				<i></i>
+			</div>
+			
+			<br>
+			<input type="submit" value="register">
+			<br>
+			<div class="links">
+				<p>Already have an admin account? <a href="/security/AdminSignin.html"><b style="color: red;">Login</b></a></p>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
