@@ -1,11 +1,13 @@
 import React from 'react'
+import Navbar from '../Navbar'
 import UserNavbar from '../user/UserNavbar'
 
 function HR_Jobs() {
   return (
     
      <>
-      <UserNavbar/>
+      {/* <UserNavbar/> */}
+      <Navbar/>
     
       {/* categories starts here */}
 

@@ -11,7 +11,7 @@ function Aboutpage() {
   return (
     <>
     <div class="container-xxl bg-white p-0">
-    <Navbar/>
+    <Navbar title="RecruitEmp"/>
     <AboutHeader/>
     <About/>
     <AboutSevices/>

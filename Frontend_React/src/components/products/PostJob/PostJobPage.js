@@ -12,7 +12,7 @@ return(
 
 <>
 
-<Navbar/>
+<Navbar title="RecruitEmp"/>
 <Post_Job/>
 <Footer/>
 </>
