@@ -1,7 +1,7 @@
 import { React, onSubmit, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Footer from '../Footer'
-import UserNavbar from '../user/UserNavbar'
+import Navbar from '../Navbar'
 import axios from 'axios'
 
 
@@ -78,7 +78,7 @@ function Resume_word_cloud() {
 
     return (
         <>
-            <UserNavbar />
+            <Navbar title = "RecruitEmp" />
             <div className="container-xxl p-5 m-5 wow fadeInUp" data-wow-delay="0.1s">
                 <div className="container">
                     <div className="row gy-5 gx-4">

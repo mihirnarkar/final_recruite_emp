@@ -7,7 +7,7 @@ function HR_Jobs() {
     
      <>
       {/* <UserNavbar/> */}
-      <Navbar/>
+      <Navbar title="RecruitEmp"/>
     
       {/* categories starts here */}
 

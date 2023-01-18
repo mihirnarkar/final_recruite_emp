@@ -9,7 +9,7 @@ function Header() {
     <div className={styles.container}>
       <div className={styles.left}>
         <p className={styles.heading}>
-          <span>recruitEmp-Resume</span> that stands out!
+          <span>RecruitEmp-Resume</span> That Stands Out!
         </p>
         <p className={styles.heading}>
           Make your own resume.

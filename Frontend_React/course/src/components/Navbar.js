@@ -4,11 +4,12 @@ import { Link } from 'react-router-dom'
 export default function Navbar(props) {
   return (
     <>
+    
     {/* Navbar starts */}
     <div className="container-fluid position-relative p-0">
         <nav className="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
             <Link to="/index.html" className="navbar-brand p-0">
-                <h1 className="m-0"> <img src="/img/logo.gif" className='img' alt="Computer man"/> recruitEMP</h1>
+                <h1 className="m-0"> <img src="/img/logo.gif" className='img' alt="Computer man"/> RecruitEmp</h1>
             </Link>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span className="fa fa-bars"></span>

@@ -7,7 +7,7 @@ function Computer_Science_Jobs() {
     
      <>
       {/* <UserNavbar/> */}
-      <Navbar/>
+      <Navbar title="RecruitEmp"/>
     
       
       {/* categories starts here */}

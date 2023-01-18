@@ -8,7 +8,7 @@ function Marketing() {
     
      <>
       {/* <UserNavbar/> */}
-      <Navbar/>
+      <Navbar title="RecruitEmp"/>
       
 
       {/* categories starts here */}

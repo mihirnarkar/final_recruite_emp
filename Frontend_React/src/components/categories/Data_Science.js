@@ -8,7 +8,7 @@ function Data_Science() {
     
      <>
       {/* <UserNavbar/> */}
-      <Navbar/>
+      <Navbar title="RecruitEmp"/>
      
       {/* categories starts here */}
       <h1><center>Data Science</center></h1>

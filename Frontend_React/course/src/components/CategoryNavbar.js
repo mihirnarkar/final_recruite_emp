@@ -8,7 +8,7 @@ export default function CategoryNavbar(props) {
         <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
             <Link to="/index.html" class="navbar-brand p-0"> 
                 {/* <!-- <h1 class="m-0"><i class="fa fa-user-tie me-2"></i>recruiteEMP</h1> --> */}
-                <h1 class="m-0"> <img src="/img/logo.gif" alt="Computer man" style={{height:"60px",width:"60px"}}/> recruitEMP</h1>
+                <h1 class="m-0"> <img src="/img/logo.gif" alt="Computer man" style={{height:"60px",width:"60px"}}/> RecruitEmp</h1>
             </Link>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="fa fa-bars"></span>
