@@ -37,7 +37,7 @@ export default function CategoryNavbar(props) {
                     data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>
                 <Link to="../security/signup.html" class="btn btn-primary py-2 px-4 ms-3">Sign Up</Link>
             </div>
-        </nav>
+        </nav> 
 
         <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
