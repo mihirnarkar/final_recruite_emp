@@ -65,6 +65,7 @@ def login():
         mydb.close()  # closing the connection
 
         if user_data != None:
+            
             # redirecting to the userhomepage after successful login`
             flash("You have been logged in")
             return redirect('http://localhost:3000/userhomepage')
