@@ -26,16 +26,19 @@ export default function CategoryNavbar(props) {
                             <Link to="/programming" class="dropdown-item">Programming</Link>
                         </div>
                     </div>
-                    <div class="nav-item dropdown">
+                    {/* <div class="nav-item dropdown">
                         <Link to="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">login</Link>
                         <div class="dropdown-menu m-0">
                             <Link to="/security/login.html" class="dropdown-item">Logout</Link>                    
                         </div>
-                    </div>
+                    </div> */}
                 </div>
-                <butaton type="button" class="btn text-primary ms-3" data-bs-toggle="modal"
+                {/* <butaton type="button" class="btn text-primary ms-3" data-bs-toggle="modal"
                     data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>
-                <Link to="../security/signup.html" class="btn btn-primary py-2 px-4 ms-3">Sign Up</Link>
+                <Link to="../security/signup.html" class="btn btn-primary py-2 px-4 ms-3">Sign Up</Link> */}
+                <div className="container">
+                    
+                </div>
             </div>
         </nav> 
 

@@ -33,7 +33,7 @@ function UserNavbar() {
                             </div>
                         </div>
 
-                        <a href=" http://localhost:3002" target="_blank" className="nav-item nav-link">Course</a>
+                        <a href=" http://localhost:3001" target="_blank" className="nav-item nav-link">Course</a>
                         <Link to="/discussion" className="nav-item nav-link">FAQ</Link>
 
                         {/* <div className="nav-item dropdown">

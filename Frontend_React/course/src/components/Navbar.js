@@ -29,16 +29,19 @@ export default function Navbar(props) {
                             <Link to="/programming" className="dropdown-item">Programming</Link>
                         </div>
                     </div>
-                    <div className="nav-item dropdown">
+                    {/* <div className="nav-item dropdown">
                         <Link to="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">login</Link>
                         <div className="dropdown-menu m-0">
                             <Link to="../security/login.html" className="dropdown-item">Logout</Link>                    
                         </div>
-                    </div>
+                    </div> */}
                 </div>
-                <butaton type="button" className="btn text-primary ms-3" data-bs-toggle="modal"
+                {/* <butaton type="button" className="btn text-primary ms-3" data-bs-toggle="modal"
                     data-bs-target="#searchModal"><i className="fa fa-search"></i></butaton>
-                <Link to="../security/signup.html" className="btn btn-primary py-2 px-4 ms-3">Sign Up</Link>
+                <Link to="../security/signup.html" className="btn btn-primary py-2 px-4 ms-3">Sign Up</Link> */}
+                <div className="container">
+                    
+                </div>
             </div>
         </nav>
 

@@ -1,7 +1,7 @@
 from datetime import date
 from flask import Flask, redirect, flash, url_for, render_template, request, redirect, flash, jsonify
 import mysql.connector
-import resume_word_cloud
+# import resume_word_cloud
 from flask_cors import CORS, cross_origin
 cors = CORS(resources={r"/*": {"origins": "*",
             "allow_headers": "*", "expose_headers": "*"}})
@@ -195,9 +195,10 @@ def resume_word_cloud_checker():
     print(job_desc)
     print(resume_name)
 
-    result_matched = resume_word_cloud.start_word_cloud()
+    # result_matched = resume_word_cloud.start_word_cloud()
 
-    print(result_matched)
+    # print(result_matched)
+
     # flash("You have been flashed hahaha", "info")
 
     return test_data
