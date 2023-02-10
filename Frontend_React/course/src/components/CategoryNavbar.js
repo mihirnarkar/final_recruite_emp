@@ -40,7 +40,7 @@ export default function CategoryNavbar(props) {
                     
                 </div>
             </div>
-        </nav>
+        </nav> 
 
         <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
