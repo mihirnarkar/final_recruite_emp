@@ -114,6 +114,7 @@ def signin():
     return redirect('http://localhost:3000/security/signup1.html')
 
 
+
 # Admin signup process
 @app.route('/security/adminsignup.html', methods=["POST"])
 def admin_signup():
@@ -181,6 +182,7 @@ def admin_login():
         else:
             # If credentials are wrong then it will redirect to the same page
             return redirect('http://localhost:3000/security/AdminSignin.html')
+
 
 
 
