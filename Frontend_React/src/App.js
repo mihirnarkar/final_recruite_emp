@@ -49,19 +49,11 @@ import AdminChangePass from './components/admin/AdminChangePass';
 import AdminChangeEmail from './components/admin/AdminChangeEmail';
 import AdminDeleteAccount from './components/admin/AdminDeleteAccount';
 
+import Coursecategory from './components/course/Coursecategory';
+import CourseHome from './components/course/CourseHome';
 
 
-
-
-// import Categories1 from '../categories/Categories1';
-// import Categories2 from './components/categories/categories2';
-
-
-// path='/categories1' element={<Categories1 />} />
-//         <Route path='/categories2' element={<Categories2 />} />
-//         <Route path='/categories3' element={<Categories3 />} />
-//         <Route path='/categories4' element={<Categories4 />} />
-//         <Route path='/categories5' element={<Categories5 />} />       
+     
 
 
 function App() {
@@ -179,6 +171,10 @@ function App() {
         <Route path='/adminchangepassword' element={<AdminChangePass/>}/>
         <Route path='/adminchangeemail' element={<AdminChangeEmail/>}/>
         <Route path='/admindeleteaccount' element={<AdminDeleteAccount/>}/>
+
+        {/* Updated course  */}
+        <Route path='/CourseHome' element={<CourseHome/>}/>
+        <Route path='/CourseCategory' element={<Coursecategory/>}/>
 
       </Routes>
     </BrowserRouter>

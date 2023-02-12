@@ -1,11 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-function Navbar(props) {
-    return (
-        <>
-            {/* Navbar starts */}
-            <nav className="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+function CourseNavbar(props) {
+  return (
+    <>
+    {/* Navbar starts */}
+    <nav className="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
                 <Link to="/" className="navbar-brand d-flex align-items-center text-center py-0 px-4 px-lg-5">
                 <span>
                     <img src='/img/logo.gif' className='logo' />
@@ -44,7 +44,7 @@ function Navbar(props) {
                             </div>
                         </div>
 
-                        <a href='/CourseHome' target="_blank" className="nav-item nav-link">Course</a>
+                        <a href='/CourseCategory' target="_blank" className="nav-item nav-link">Course</a>
 
 
                         <div className="nav-item dropdown">
@@ -63,10 +63,8 @@ function Navbar(props) {
                         started<i className="fa fa-arrow-right ms-3"></i></a>
                 </div>
             </nav>
-            {/* Navbar ends */}
-
-        </>
-    )
+    </>
+  )
 }
 
-export default Navbar 
+export default CourseNavbar
