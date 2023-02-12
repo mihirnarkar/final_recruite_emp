@@ -20,19 +20,17 @@ function CourseNavbar(props) {
                     <div className="navbar-nav ms-auto p-4 p-lg-0">
 
                         <Link className="nav-item nav-link" to="/" >Home</Link> 
-                        <Link to="/about" className="nav-item nav-link">About</Link>
+                        {/* <Link to="/about" className="nav-item nav-link">About</Link> */}
 
                         <div className="nav-item dropdown">
-                            <Link to="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Jobs</Link>
+                            <Link to="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Category</Link>
                             <div className="dropdown-menu rounded-0 m-0">
-                                <Link to="/joblist" className="dropdown-item">Job List</Link>
-                                <Link to="/jobdetail1" className="dropdown-item">Job Detail</Link>
+                                <Link to="/CourseArchitecture" className="dropdown-item">Architecture</Link>
+                                <Link to="/CourseBusiness" className="dropdown-item">Business</Link>
                                 <Link to="/marketing" className='dropdown-item'>Marketing</Link>
                                 <Link to="/hr_jobs" className='dropdown-item'>HR Jobs</Link>
                                 <Link to="/computer_science_jobs" className='dropdown-item'>Computer Science Jobs</Link>
                                 <Link to="/data_science" className='dropdown-item'>Data Science Jobs</Link>
-                                
-                                
                             </div>
                         </div>
                         <div className="nav-item dropdown">
@@ -44,7 +42,7 @@ function CourseNavbar(props) {
                             </div>
                         </div>
 
-                        <a href='/CourseCategory' target="_blank" className="nav-item nav-link">Course</a>
+                        <a href='/CourseHome' className="nav-item nav-link">Course</a>
 
 
                         <div className="nav-item dropdown">

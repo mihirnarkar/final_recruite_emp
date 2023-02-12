@@ -49,8 +49,10 @@ import AdminChangePass from './components/admin/AdminChangePass';
 import AdminChangeEmail from './components/admin/AdminChangeEmail';
 import AdminDeleteAccount from './components/admin/AdminDeleteAccount';
 
-import Coursecategory from './components/course/Coursecategory';
+// import Coursecategory from './components/course/Coursecategory';
 import CourseHome from './components/course/CourseHome';
+import Arch from './components/course/Category/Arch'
+import Business from './components/course/Category/Business'
 
 
      
@@ -174,7 +176,9 @@ function App() {
 
         {/* Updated course  */}
         <Route path='/CourseHome' element={<CourseHome/>}/>
-        <Route path='/CourseCategory' element={<Coursecategory/>}/>
+        <Route path='/CourseArchitecture' element={<Arch/>}/>
+        <Route path='/CourseBusiness' element={<Business/>}/>
+        {/* <Route path='/CourseCategory' element={<Coursecategory/>}/> */}
 
       </Routes>
     </BrowserRouter>
