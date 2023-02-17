@@ -42,7 +42,7 @@ export default function CategoryNavbar(props) {
             </div>
         </nav> 
 
-        <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     {/* <!-- <img class="w-100" src="../img/carousel-1.jpg" alt="Image"> --> */}
