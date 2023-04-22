@@ -51,6 +51,7 @@ function AdminNavbar() {
                             <div className="dropdown-menu rounded-0 m-0">
                                 {/* <Link href="http://localhost:3001" className="dropdown-item">Your Resume</Link> */}
                                 <Link to="/trackapplicants" className="dropdown-item">Applicants</Link>
+                                <Link to="/adminpostjob" className="dropdown-item">Post Job</Link>
 
                                 <div>
                                     <Link className="nav-link dropdown-toggle" to="account.html" id="navbarDropdown"

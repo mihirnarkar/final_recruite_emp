@@ -53,6 +53,7 @@ import AdminDeleteAccount from './components/admin/AdminDeleteAccount';
 import CourseHome from './components/course/CourseHome';
 import Arch from './components/course/Category/Arch'
 import Business from './components/course/Category/Business'
+import PostJob from './components/admin/PostJob';
 
 
 function App() {
@@ -170,6 +171,7 @@ function App() {
         <Route path='/adminchangepassword' element={<AdminChangePass/>}/>
         <Route path='/adminchangeemail' element={<AdminChangeEmail/>}/>
         <Route path='/admindeleteaccount' element={<AdminDeleteAccount/>}/>
+        <Route path='/adminpostjob' element={<PostJob/>}/>
 
         {/* Updated course  */}
         <Route path='/CourseHome' element={<CourseHome/>}/>
