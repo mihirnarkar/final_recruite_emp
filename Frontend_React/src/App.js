@@ -54,6 +54,8 @@ import CourseHome from './components/course/CourseHome';
 import Arch from './components/course/Category/Arch'
 import Business from './components/course/Category/Business'
 
+import ChatGPTintegretion from './components/chatgpt/chatgpt'
+
 
 function App() {
 
@@ -175,6 +177,9 @@ function App() {
         <Route path='/CourseHome' element={<CourseHome/>}/>
         <Route path='/CourseArchitecture' element={<Arch/>}/>
         <Route path='/CourseBusiness' element={<Business/>}/>
+
+
+        <Route path='/chatgptintegretion' element={<ChatGPTintegretion/>}/>
         {/* <Route path='/CourseCategory' element={<Coursecategory/>}/> */}
 
       </Routes>
