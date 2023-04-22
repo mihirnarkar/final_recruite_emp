@@ -56,13 +56,14 @@ function Navbar(props) {
                                 <Link to="/support" className="dropdown-item">Support Assistance</Link>
                             </div> 
                         </div>
+                        <Link className="nav-item nav-link" to="/chatgptintegretion" >ChatGPT</Link> 
                         <a href="/security/signin.html" className="nav-item nav-link">Log In</a>
 
                     </div>
                     <a href="/security_recruit/signup.html" className="btn btn-secondary rounded-0 py-4 px-lg-5 d-none d-lg-block">Gets
                         started<i className="fa fa-arrow-right ms-3"></i></a>
                 </div>
-            </nav>
+            </nav> 
             {/* Navbar ends */}
 
         </>

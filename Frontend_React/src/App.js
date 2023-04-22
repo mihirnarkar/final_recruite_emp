@@ -55,6 +55,8 @@ import Arch from './components/course/Category/Arch'
 import Business from './components/course/Category/Business'
 import PostJob from './components/admin/PostJob';
 
+import ChatGPTintegretion from './components/chatgpt/chatgpt'
+
 
 function App() {
 
@@ -177,6 +179,9 @@ function App() {
         <Route path='/CourseHome' element={<CourseHome/>}/>
         <Route path='/CourseArchitecture' element={<Arch/>}/>
         <Route path='/CourseBusiness' element={<Business/>}/>
+
+
+        <Route path='/chatgptintegretion' element={<ChatGPTintegretion/>}/>
         {/* <Route path='/CourseCategory' element={<Coursecategory/>}/> */}
 
       </Routes>
