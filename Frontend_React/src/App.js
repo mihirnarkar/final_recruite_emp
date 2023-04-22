@@ -55,9 +55,6 @@ import Arch from './components/course/Category/Arch'
 import Business from './components/course/Category/Business'
 
 
-     
-
-
 function App() {
 
   const [data, setdata] = useState({

@@ -35,14 +35,14 @@ function Navbar(props) {
                                 
                             </div>
                         </div>
-                        <div className="nav-item dropdown">
+                        {/* <div className="nav-item dropdown">
                             <Link to="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</Link>
                             <div className="dropdown-menu rounded-0 m-0">
                                 <Link to="/services" className="dropdown-item">Get a job</Link>
                                 <a href='/Resume_word_cloud' className="dropdown-item">Word Cloud</a>
 
                             </div>
-                        </div>
+                        </div> */}
 
                         <a href='/CourseHome'  className="nav-item nav-link">Course</a>
 

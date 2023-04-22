@@ -1,14 +1,14 @@
 import React from 'react'
 import Footer from '../Footer'
-import Navbar from '../Navbar'
 import GetJobContent from './GetJobContent'
 import GetJobHeader from './GetJobHeader'
+import UserNavbar from '../user/UserNavbar'
 
 function GetJobPage() {
   return (
     <>
     <div class="container-xxl bg-white p-0">
-    <Navbar title="RecruitEmp"/>
+    <UserNavbar/>
     <GetJobHeader/>
     <GetJobContent/>
     <Footer/>
