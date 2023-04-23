@@ -331,6 +331,41 @@ def track_application():
 #     return test_data
 
 
+# Admin post job
+@app.route('/AdminPostjob', methods=['POST'])
+def receive_data():
+    jobname = request.json.get('jobname')
+    companyemail = request.json.get('companyemail')
+    contact = request.json.get('contact')
+    exp = request.json.get('exp')
+    jobCategory = request.json.get('jobCategory')
+    jobdesc = request.json.get('jobdesc')
+    print(jobname)
+    print(companyemail)
+    print(contact)
+    print(exp)
+    print(jobCategory)
+    print(jobdesc)
+    
+    # Saving data to database:
+    mydb = mysql.connector.connect(host='sql787.main-hosting.eu',
+                                            database='u844323284_Recruitemp',
+                                            user='u844323284_project',
+                                            password='Recruitemp@1234')
+
+    # sql_query = f"INSERT INTO `postjob`( `job_name`, `company_email`, `contact_no`, `experience_expected`, `job_category`, `job_descriptions`) VALUES ('{jobname}','{companyemail}','{contact}','{exp}','{jobCategory}','{jobdesc}');"
+
+    sql_query = f"INSERT INTO `postjob` (`job_name`, `company_email`, `contact_no`, `experience_expected`, `job_category`, `job_descriptions`) VALUES ('{jobname}', '{companyemail}', '{contact}', '{exp}', '{jobCategory}', '{jobdesc}');"
+
+    cursor = mydb.cursor()
+    cursor.execute(sql_query)
+    mydb.commit() 
+    mydb.close()
+
+    return jsonify({'success': True, 'message': 'Job posted Successfully'})
+
+
+
 # Running app
 if __name__ == '__main__':
     app.run(debug=True)
