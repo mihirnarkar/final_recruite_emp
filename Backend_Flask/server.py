@@ -366,6 +366,38 @@ def receive_data():
 
 
 
+
+@app.route('/fetchpostjob', methods=['GET'])
+def get_job():
+    mydb = mysql.connector.connect(host='sql787.main-hosting.eu',
+                                   database='u844323284_Recruitemp',
+                                   user='u844323284_project',
+                                   password='Recruitemp@1234')
+
+    # sql_query = f"SELECT * FROM `postjob` WHERE `sr_no`={2}"
+    sql_query = f"SELECT * FROM `postjob` WHERE `sr_no`={2}"
+    
+    mycursor = mydb.cursor()
+    mycursor.execute(sql_query)
+    data = mycursor.fetchone()
+    print(data)
+    mycursor.close()
+
+    data = {
+            'jobname': data[1],
+            "companyemail": data[2],
+            "exp": data[4],
+            "jobcategory": data[5],
+            "jobdesc": data[6],
+        }
+
+    return data
+
+
+
+
+
+
 # Running app
 if __name__ == '__main__':
     app.run(debug=True)

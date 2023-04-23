@@ -1,7 +1,37 @@
-import React from 'react'
+import React,{useState} from 'react'
 import { Link } from 'react-router-dom'
+import { useEffect } from 'react';
+import SingleJobs from './user/SingleJobs';
 
-function JobListContent(props) {
+function JobListContent() {
+
+    const [jobs, setJobs] = useState({
+        id: 0,
+        jobname: "",
+        companyemail: "",
+        exp: "",
+        jobcategory: "",
+        jobdesc: ""
+      });
+    
+    
+      useEffect(() => {
+        // Using fetch to fetch the api from 
+        // flask server it will be redirected to proxy
+        fetch("/fetchpostjob").then((res) =>
+          res.json().then((jobs) => {
+            // Setting a data from api
+            setJobs({
+              jobname: jobs.jobname,
+              companyemail: jobs.companyemail,
+              exp: jobs.exp,
+              jobcategory: jobs.jobcategory,
+              jobdesc: jobs.jobdesc,
+            });
+          })
+        );
+      }, []);
+
   return (
     <>
     {/* Job start */}
@@ -31,16 +61,19 @@ function JobListContent(props) {
                     </ul>
                     <div className="tab-content">
                         <div id="tab-1" className="tab-pane fade show p-0 active">
+
+
+
                             <div className="job-item p-4 mb-4">
                                 <div className="row g-4">
                                     <div className="col-sm-12 col-md-8 d-flex align-items-center">
                                         <img className="flex-shrink-0 img-fluid border rounded joblist" src="img/com-logo-1.jpg"
                                             alt="" />
                                         <div className="text-start ps-4">
-                                            <h5 className="mb-3">{props.jobName1}</h5>
+                                            {/* <h5 className="mb-3">{data.job_name}</h5> */}
+                                            <h5 className="mb-3">{jobs.jobname}</h5>
                                             <span className="text-truncate me-3"><i
-                                                    className="fa fa-map-marker-alt text-secondary me-2"></i>New York,
-                                                USA</span>
+                                                    className="fa fa-map-marker-alt text-secondary me-2"></i>{jobs.companyemail}</span>
                                             <span className="text-truncate me-3"><i
                                                     className="far fa-clock text-secondary me-2"></i>Full Time</span>
                                             <span className="text-truncate me-0"><i
@@ -61,7 +94,9 @@ function JobListContent(props) {
                                     </div>
                                 </div>
                             </div>
-                            <div className="job-item p-4 mb-4">
+
+                            {/* Job 2 */}
+                            {/* <div className="job-item p-4 mb-4">
                                 <div className="row g-4">
                                     <div className="col-sm-12 col-md-8 d-flex align-items-center">
                                         <img className="flex-shrink-0 img-fluid border rounded joblist" src="img/com-logo-2.jpg"
@@ -90,8 +125,10 @@ function JobListContent(props) {
                                             2045</small>
                                     </div>
                                 </div>
-                            </div>
-                            <div className="job-item p-4 mb-4">
+                            </div> */}
+
+                            {/* Job 3 */}
+                            {/* <div className="job-item p-4 mb-4">
                                 <div className="row g-4">
                                     <div className="col-sm-12 col-md-8 d-flex align-items-center">
                                         <img className="flex-shrink-0 img-fluid border rounded joblist" src="img/com-logo-3.jpg"
@@ -120,8 +157,10 @@ function JobListContent(props) {
                                             2045</small>
                                     </div>
                                 </div>
-                            </div>
-                            <div className="job-item p-4 mb-4">
+                            </div> */}
+
+                            {/* Job 4 */}
+                            {/* <div className="job-item p-4 mb-4">
                                 <div className="row g-4">
                                     <div className="col-sm-12 col-md-8 d-flex align-items-center">
                                         <img className="flex-shrink-0 img-fluid border rounded joblist" src="img/com-logo-4.jpg"
@@ -150,8 +189,10 @@ function JobListContent(props) {
                                             2045</small>
                                     </div>
                                 </div>
-                            </div>
-                            <div className="job-item p-4 mb-4">
+                            </div> */}
+
+                            {/* Job 5 */}
+                            {/* <div className="job-item p-4 mb-4">
                                 <div className="row g-4">
                                     <div className="col-sm-12 col-md-8 d-flex align-items-center">
                                         <img className="flex-shrink-0 img-fluid border rounded joblist" src="img/com-logo-5.jpg"
@@ -180,7 +221,9 @@ function JobListContent(props) {
                                             2045</small>
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
+
+                
                             <Link className="btn btn-secondary py-3 px-5" to="">Browse More Jobs</Link>
                         </div>
                         <div id="tab-2" className="tab-pane fade show p-0">
@@ -190,7 +233,7 @@ function JobListContent(props) {
                                         <img className="flex-shrink-0 img-fluid border rounded joblist" src="img/com-logo-1.jpg"
                                             alt="" />
                                         <div className="text-start ps-4">
-                                            <h5 className="mb-3">{props.jobName1}</h5>
+                                            {/* <h5 className="mb-3">{props.jobName1}</h5> */}
                                             <span className="text-truncate me-3"><i
                                                     className="fa fa-map-marker-alt text-secondary me-2"></i>New York,
                                                 USA</span>
@@ -220,7 +263,7 @@ function JobListContent(props) {
                                         <img className="flex-shrink-0 img-fluid border rounded joblist" src="img/com-logo-2.jpg"
                                             alt="" />
                                         <div className="text-start ps-4">
-                                            <h5 className="mb-3">{props.jobName2}</h5>
+                                            {/* <h5 className="mb-3">{props.jobName2}</h5> */}
                                             <span className="text-truncate me-3"><i
                                                     className="fa fa-map-marker-alt text-secondary me-2"></i>New York,
                                                 USA</span>
@@ -250,7 +293,7 @@ function JobListContent(props) {
                                         <img className="flex-shrink-0 img-fluid border rounded joblist" src="img/com-logo-3.jpg"
                                             alt="" />
                                         <div className="text-start ps-4">
-                                            <h5 className="mb-3">{props.jobName3}</h5>
+                                            {/* <h5 className="mb-3">{props.jobName3}</h5> */}
                                             <span className="text-truncate me-3"><i
                                                     className="fa fa-map-marker-alt text-secondary me-2"></i>New York,
                                                 USA</span>
@@ -280,7 +323,7 @@ function JobListContent(props) {
                                         <img className="flex-shrink-0 img-fluid border rounded joblist" src="img/com-logo-4.jpg"
                                             alt="" />
                                         <div className="text-start ps-4">
-                                            <h5 className="mb-3">{props.jobName4}</h5>
+                                            {/* <h5 className="mb-3">{props.jobName4}</h5> */}
                                             <span className="text-truncate me-3"><i
                                                     className="fa fa-map-marker-alt text-secondary me-2"></i>New York,
                                                 USA</span>
@@ -310,7 +353,7 @@ function JobListContent(props) {
                                         <img className="flex-shrink-0 img-fluid border rounded joblist" src="img/com-logo-5.jpg"
                                             alt="" />
                                         <div className="text-start ps-4">
-                                            <h5 className="mb-3">{props.jobName5}</h5>
+                                            {/* <h5 className="mb-3">{props.jobName5}</h5> */}
                                             <span className="text-truncate me-3"><i
                                                     className="fa fa-map-marker-alt text-secondary me-2"></i>New York,
                                                 USA</span>
@@ -343,7 +386,7 @@ function JobListContent(props) {
                                         <img className="flex-shrink-0 img-fluid border rounded joblist" src="img/com-logo-1.jpg"
                                             alt="" />
                                         <div className="text-start ps-4">
-                                            <h5 className="mb-3">{props.jobName1}</h5>
+                                            {/* <h5 className="mb-3">{props.jobName1}</h5> */}
                                             <span className="text-truncate me-3"><i
                                                     className="fa fa-map-marker-alt text-secondary me-2"></i>New York,
                                                 USA</span>
@@ -373,7 +416,7 @@ function JobListContent(props) {
                                         <img className="flex-shrink-0 img-fluid border rounded joblist" src="img/com-logo-2.jpg"
                                             alt="" />
                                         <div className="text-start ps-4">
-                                            <h5 className="mb-3">{props.jobName2}</h5>
+                                            {/* <h5 className="mb-3">{props.jobName2}</h5> */}
                                             <span className="text-truncate me-3"><i
                                                     className="fa fa-map-marker-alt text-secondary me-2"></i>New York,
                                                 USA</span>
@@ -403,7 +446,7 @@ function JobListContent(props) {
                                         <img className="flex-shrink-0 img-fluid border rounded joblist" src="img/com-logo-3.jpg"
                                             alt="" />
                                         <div className="text-start ps-4">
-                                            <h5 className="mb-3">{props.jobName3}</h5>
+                                            {/* <h5 className="mb-3">{props.jobName3}</h5> */}
                                             <span className="text-truncate me-3"><i
                                                     className="fa fa-map-marker-alt text-secondary me-2"></i>New York,
                                                 USA</span>
@@ -433,7 +476,7 @@ function JobListContent(props) {
                                         <img className="flex-shrink-0 img-fluid border rounded joblist" src="img/com-logo-4.jpg"
                                             alt="" />
                                         <div className="text-start ps-4">
-                                            <h5 className="mb-3">{props.jobName4}</h5>
+                                            {/* <h5 className="mb-3">{props.jobName4}</h5> */}
                                             <span className="text-truncate me-3"><i
                                                     className="fa fa-map-marker-alt text-secondary me-2"></i>New York,
                                                 USA</span>
@@ -463,7 +506,7 @@ function JobListContent(props) {
                                         <img className="flex-shrink-0 img-fluid border rounded joblist" src="img/com-logo-5.jpg"
                                             alt="" />
                                         <div className="text-start ps-4">
-                                            <h5 className="mb-3">{props.jobName5}</h5>
+                                            {/* <h5 className="mb-3">{props.jobName5}</h5> */}
                                             <span className="text-truncate me-3"><i
                                                     className="fa fa-map-marker-alt text-secondary me-2"></i>New York,
                                                 USA</span>
