@@ -90,20 +90,22 @@ def clean_job_decsription(jd):
 def create_word_cloud(jd):
     corpus = jd
     fdist = FreqDist(corpus)
-    # print(fdist.most_common(100))
+    # print(fdist.most_common(50))
     words = ' '.join(corpus)
     words = words.split()
 
     # create a empty dictionary
     data = dict()
+    
     #  Get frequency for each words where word is the key and the count is the value
     for word in (words):
         word = word.lower()
         data[word] = data.get(word, 0) + 1
     # Sort the dictionary in reverse order to print first the most used terms
     dict(sorted(data.items(), key=operator.itemgetter(1), reverse=True))
+    print(data)
     word_cloud = WordCloud(width=800, height=800,
-                           background_color='white', max_words=500)
+                           background_color='white', max_words=50)
     word_cloud.generate_from_frequencies(data)
     # plot the WordCloud image
     plt.figure(figsize=(10, 8), edgecolor='k')
