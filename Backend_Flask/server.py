@@ -367,6 +367,7 @@ def receive_data():
 
 
 
+# Job 1:
 @app.route('/fetchpostjob', methods=['GET'])
 def get_job():
     mydb = mysql.connector.connect(host='sql787.main-hosting.eu',
@@ -375,12 +376,11 @@ def get_job():
                                    password='Recruitemp@1234')
 
     # sql_query = f"SELECT * FROM `postjob` WHERE `sr_no`={2}"
-    sql_query = f"SELECT * FROM `postjob` WHERE `sr_no`={2}"
+    sql_query = f"SELECT * FROM `postjob` WHERE `sr_no`={1}"
     
     mycursor = mydb.cursor()
     mycursor.execute(sql_query)
     data = mycursor.fetchone()
-    print(data)
     mycursor.close()
 
     data = {
@@ -389,10 +389,127 @@ def get_job():
             "exp": data[4],
             "jobcategory": data[5],
             "jobdesc": data[6],
-        }
+    }
 
     return data
 
+
+# Job 2:
+@app.route('/fetchpostjob1', methods=['GET'])
+def get_job1():
+    mydb = mysql.connector.connect(host='sql787.main-hosting.eu',
+                                   database='u844323284_Recruitemp',
+                                   user='u844323284_project',
+                                   password='Recruitemp@1234')
+    
+    sql_query1 = f"SELECT * FROM `postjob` WHERE `sr_no`={2}"
+    mycursor1 = mydb.cursor()
+    mycursor1.execute(sql_query1)
+    data1 = mycursor1.fetchone()
+
+    data1 = {
+            'jobname': data1[1],
+            "companyemail": data1[2],
+            "exp": data1[4],
+            "jobcategory": data1[5],
+            "jobdesc": data1[6],
+    }
+
+    return data1
+
+
+# Job 3:
+@app.route('/fetchpostjob2', methods=['GET'])
+def get_job2():
+    mydb = mysql.connector.connect(host='sql787.main-hosting.eu',
+                                   database='u844323284_Recruitemp',
+                                   user='u844323284_project',
+                                   password='Recruitemp@1234')
+    
+    sql_query2 = f"SELECT * FROM `postjob` WHERE `sr_no`={3}"
+    mycursor2 = mydb.cursor()
+    mycursor2.execute(sql_query2)
+    data2 = mycursor2.fetchone()
+
+    data2 = {
+            'jobname': data2[1],
+            "companyemail": data2[2],
+            "exp": data2[4],
+            "jobcategory": data2[5],
+            "jobdesc": data2[6],
+    }
+
+    return data2
+
+# Job 4:
+@app.route('/fetchpostjob3', methods=['GET'])
+def get_job3():
+    mydb = mysql.connector.connect(host='sql787.main-hosting.eu',
+                                   database='u844323284_Recruitemp',
+                                   user='u844323284_project',
+                                   password='Recruitemp@1234')
+    
+    sql_query3 = f"SELECT * FROM `postjob` WHERE `sr_no`={4}"
+    mycursor3 = mydb.cursor()
+    mycursor3.execute(sql_query3)
+    data3 = mycursor3.fetchone()
+
+    data3 = {
+            'jobname': data3[1],
+            "companyemail": data3[2],
+            "exp": data3[4],
+            "jobcategory": data3[5],
+            "jobdesc": data3[6],
+    }
+
+    return data3
+
+# Job 5:
+@app.route('/fetchpostjob4', methods=['GET'])
+def get_job4():
+    mydb = mysql.connector.connect(host='sql787.main-hosting.eu',
+                                   database='u844323284_Recruitemp',
+                                   user='u844323284_project',
+                                   password='Recruitemp@1234')
+    
+    sql_query4 = f"SELECT * FROM `postjob` WHERE `sr_no`={5}"
+    mycursor4 = mydb.cursor()
+    mycursor4.execute(sql_query4)
+    data4 = mycursor4.fetchone()
+
+    data4 = {
+            'jobname': data4[1],
+            "companyemail": data4[2],
+            "exp": data4[4],
+            "jobcategory": data4[5],
+            "jobdesc": data4[6],
+    }
+
+    return data4
+    
+# Job 6:
+@app.route('/fetchpostjob5', methods=['GET'])
+def get_job5():
+    mydb = mysql.connector.connect(host='sql787.main-hosting.eu',
+                                   database='u844323284_Recruitemp',
+                                   user='u844323284_project',
+                                   password='Recruitemp@1234')
+    
+    sql_query5 = f"SELECT * FROM `postjob` WHERE `sr_no`={6}"
+    mycursor5 = mydb.cursor()
+    mycursor5.execute(sql_query5)
+    data5 = mycursor5.fetchone()
+
+    data5 = {
+            'jobname': data5[1],
+            "companyemail": data5[2],
+            "exp": data5[4],
+            "jobcategory": data5[5],
+            "jobdesc": data5[6],
+    }
+
+    return data5
+    
 
 
 

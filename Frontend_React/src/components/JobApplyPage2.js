@@ -3,8 +3,17 @@ import Footer from './Footer'
 import Navbar from './Navbar'
 import { Link } from 'react-router-dom'
 import Alert from './Alert'
+import { useNavigate } from 'react-router-dom'
 
 function JobApplyPage2() {
+  const navigate = useNavigate()
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert("Your response are recorded")
+    navigate('/trackapp')
+  }
+
   return (
     <>
       <Navbar title="RecruitEmp" />
@@ -19,7 +28,7 @@ function JobApplyPage2() {
               <div className="">
 
 
-                <form method='post' action='jobApplypage2'>
+                <form onSubmit={handleSubmit}>
                   <h4>Personal Details</h4>
                   <br />
                   <div className="row g-3">

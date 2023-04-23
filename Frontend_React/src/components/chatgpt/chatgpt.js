@@ -4,7 +4,7 @@ import './App_GPT.css'
 import '@chatscope/chat-ui-kit-styles/dist/default/styles.min.css';
 import { MainContainer, ChatContainer, MessageList, Message, MessageInput, TypingIndicator } from '@chatscope/chat-ui-kit-react';
 
-const API_KEY = "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"
+const API_KEY = "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"
 // console.log(process.env.OPENAI_API_KEY)
 // console.log("process.env.OPENAI_API_KEY")
 // "Explain things like you would to a 10 year old learning how to code."

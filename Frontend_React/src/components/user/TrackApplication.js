@@ -69,15 +69,9 @@ function TrackApplication() {
 
         <UserNavbar />
         <br></br>
-        
-        <form onSubmit={onSubmit}>
-
-          <input type="submit" value="submit"></input>
-
-        </form>
 
 
-        <Alert alertType="success" alertStatus="Success" alertMssg="Your application has been submitted sucessfully" />
+        {/* <Alert alertType="success" alertStatus="Success" alertMssg="Your application has been submitted sucessfully" /> */}
         {/* Container starts here */}
         <div className="container-md w-100 mt-5 wow zoomIn">
           <br />
