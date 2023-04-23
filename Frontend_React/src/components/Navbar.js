@@ -44,7 +44,7 @@ function Navbar(props) {
                             </div>
                         </div> */}
 
-                        <a href='/CourseHome'  className="nav-item nav-link">Course</a>
+                        {/* <a href='/CourseHome'  className="nav-item nav-link">Course</a> */}
 
 
                         <div className="nav-item dropdown">
