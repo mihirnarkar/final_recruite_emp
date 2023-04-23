@@ -4,7 +4,7 @@ import './App_GPT.css'
 import '@chatscope/chat-ui-kit-styles/dist/default/styles.min.css';
 import { MainContainer, ChatContainer, MessageList, Message, MessageInput, TypingIndicator } from '@chatscope/chat-ui-kit-react';
 
-const API_KEY = "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"
+const API_KEY = "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"
 // console.log(process.env.OPENAI_API_KEY)
 // console.log("process.env.OPENAI_API_KEY")
 // "Explain things like you would to a 10 year old learning how to code."
@@ -79,15 +79,15 @@ function App() {
     }).then((data) => {
       console.log(data);
       setMessages([...chatMessages, {
-        message: "data.choices[0].message.content",
+        message: data.choices[0].message.content,
         sender: "ChatGPT"
       }]);
       console.log("data.choices[0].message.content")
-    //   console.log(data.choices[0].message.content)
+      console.log(data.choices[0].message.content)
 
-      setIsTyping(false);
+      setIsTyping(false); 
     });
-  }
+  } 
 
   const mystyle = {
     color: "white",

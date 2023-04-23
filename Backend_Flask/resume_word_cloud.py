@@ -90,7 +90,7 @@ def clean_job_decsription(jd):
 def create_word_cloud(jd):
     corpus = jd
     fdist = FreqDist(corpus)
-    # print(fdist.most_common(50))
+    print(fdist.most_common(50))
     words = ' '.join(corpus)
     words = words.split()
 
@@ -103,7 +103,7 @@ def create_word_cloud(jd):
         data[word] = data.get(word, 0) + 1
     # Sort the dictionary in reverse order to print first the most used terms
     dict(sorted(data.items(), key=operator.itemgetter(1), reverse=True))
-    print(data)
+    # print(data)
     word_cloud = WordCloud(width=800, height=800,
                            background_color='white', max_words=50)
     word_cloud.generate_from_frequencies(data)
@@ -112,7 +112,10 @@ def create_word_cloud(jd):
     plt.imshow(word_cloud, interpolation='bilinear')
     plt.axis("off")
     plt.tight_layout(pad=0)
+    plt.savefig('../Frontend_React/src/components/features/word_cloud.png')
     plt.show()
+    
+    plt.close()
 
 
 def get_resume_score(text):

@@ -10,6 +10,7 @@ function Resume_word_cloud() {
  
 
     const [file, setFile] = useState()
+    const [no_file, new_wprd_cloud] = useState();
 
 
 
@@ -17,6 +18,8 @@ function Resume_word_cloud() {
         setFile(event.target.files[0])
         console.log(event.target.files[0])
         console.log(event.target.files[0]['name']) //printing the file name
+        // new_wprd_cloud(URL.createObjectURL(event.target.files[0]));
+
 
     }
 
@@ -64,6 +67,8 @@ function Resume_word_cloud() {
             console.log(err);
         }
 
+        new_wprd_cloud('word_cloud.png');
+
     };
 
     var job_desc;
@@ -110,6 +115,10 @@ function Resume_word_cloud() {
                                                 {/* <Link className="btn btn-secondary trackAppButton" type='submit'>Submit</Link> */}
                                                 <input className="btn btn-secondary trackAppButton" type='submit' value='submit' />
                                             </div>
+
+                                            <img src={no_file} />
+                                            
+                                            {/* <img src={ require('./word_cloud.jpg') } /> */}
                                         </div>
                                     </div>
                                 </form>
