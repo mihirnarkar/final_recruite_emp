@@ -2,11 +2,14 @@ import React from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
 import { Link } from 'react-router-dom'
+import UserNavbar from './user/UserNavbar'
 
 function JobApplyPage1() {
   return (
     <>
-    <Navbar title="RecruitEmp"/>
+    {/* <Navbar title="RecruitEmp"/> */}
+    <UserNavbar/>
+    
     {/* <h1>This is Job apply page 1</h1>
     <br/>
     <Link className="btn btn-primary" to="/jobAttemptTest">Attempt Test</Link>

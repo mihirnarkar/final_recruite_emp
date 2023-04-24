@@ -4,19 +4,21 @@ import Navbar from './Navbar'
 import { Link } from 'react-router-dom'
 import Alert from './Alert'
 import { useNavigate } from 'react-router-dom'
+import UserNavbar from './user/UserNavbar'
 
 function JobApplyPage2() {
   const navigate = useNavigate()
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert("Your response are recorded")
     navigate('/trackapp')
   }
 
   return (
     <>
-      <Navbar title="RecruitEmp" />
+      {/* <Navbar title="RecruitEmp" /> */}
+      <UserNavbar/>
+      
       <br></br>
 
       <Alert alertType="info" alertMssg="Your response are recorded you can proceed with application"/>

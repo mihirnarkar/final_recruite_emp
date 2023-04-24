@@ -4,12 +4,14 @@ import Footer from './Footer'
 import Navbar from './Navbar'
 import JobDetailContent from './JobDetailContent'
 import JobDetailHeader from './JobDetailHeader'
+import UserNavbar from './user/UserNavbar'
 
 function JobDetailPageCat1() {
   return (
     <>
     <div class="container-xxl bg-white p-0">
-    <Navbar title="RecruitEmp"/>
+    {/* <Navbar title="RecruitEmp"/> */}
+    <UserNavbar/>
     <JobDetailHeader/>
     <JobDetailContent 
 
